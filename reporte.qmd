@@ -1,5 +1,26 @@
 ---
-bibliography: refs.bib
-csl: ieee.csl
+title: "Reporte"
 ---
+
+# 1. Clima
+
+a. bioclima: templado subhúmedo @comision_nacional_de_vivienda_conavi_estrategias_2021
+
+templado húmedo @noauthor_anexo_nodate
+
+b. grados hora disconfort
+
+Estado
+Distrito Federal
+Municipio
+Miguel Hidalgo
+Localidad
+Miguel Hidalgo (Clave INEGI 090160001)
+ZonaTérmica
+3A
+GDCA65F
+2,351
+GDRA50F
+4,959
+@noauthor_gradosdia_nodate
 
