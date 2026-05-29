@@ -1,0 +1,5 @@
+---
+bibliography: refs.bib
+csl: ieee.csl
+---
+
