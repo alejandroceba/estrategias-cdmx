@@ -8,6 +8,8 @@ a. bioclima: templado subhúmedo @comision_nacional_de_vivienda_conavi_estrategi
 
 templado húmedo @noauthor_anexo_nodate
 
+no importa, diagnóstico más o menos independiente del clima, porque se va a evaluar sitio directamente con construcción
+
 b. grados hora disconfort
 
 Estado
@@ -18,9 +20,22 @@ Localidad
 Miguel Hidalgo (Clave INEGI 090160001)
 ZonaTérmica
 3A
-GDCA65F
+
+Grados Día de Calefacción Anual base 65 Grados Fahrenheit (GDCA65F)
 2,351
-GDRA50F
+
+Grados Día de Refrigeración Anual base 65 Grados Fahrenheit (GDRA50F)
 4,959
 @noauthor_gradosdia_nodate
+
+pesada con el volumen
+
+temporada cálida
+
+aumentar clo
+
+objetivo: aumentar confort térmico disminuyendo el disconfort cálido (dimsinuir grados hora de refrigeración)
+
+ventilación estrategia versátil
+
 
