@@ -1,0 +1,128 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "481e66cc",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "title: \"Reporte\"\n",
+    "---\n",
+    "\n",
+    "## 1. Clima\n",
+    "\n",
+    "La ubicación del EPW (epw/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw) es alcaldía Miguel Hidalgo, Ciudad de México @lawrie_climatewebsitewmo_region_4_north_and_central_americamex_mexico_2026 (clave INEGI 090160001). La clasificación del bioclima del sitio es templado húmedo @noauthor_anexo_nodate y la zona térmica de acuerdo con los grados día reportados por CONUEE es 3A @comision_nacional_de_vivienda_conavi_estrategias_2021. Los Grados Día de Calefacción Anual base 65 Grados Fahrenheit (GDCA65F, 18.3 °C) reportados por CONUEE son 2351, y los Grados Día de Refrigeración Anual base 50 Grados Fahrenheit (GDRA50F, 10 °C) son 4959 @noauthor_gradosdia_nodate.\n",
+    "\n",
+    "En la @tbl-clima se muestran la temperatura media, mínima y máxima mensual, así como los grados día de calefacción y refrigeración mensual del sitio."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "tbl-clima",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/markdown": [
+       "       temp_media    temp_min    temp_max    GDCA18.3    GDRA10\n",
+       "---  ------------  ----------  ----------  ----------  --------\n",
+       "Ene         12.21         2.4        24.4      189.89     68.44\n",
+       "Feb         14.67         3.7        27        102.61    130.72\n",
+       "Mar         16.93         6.5        28.9       45.67    214.91\n",
+       "Abr         18.31         8.1        30.1       21.98    249.34\n",
+       "May         18.7          8.3        31.6       16.87    269.79\n",
+       "Jun         17.93         9          28.3       26.3     237.94\n",
+       "Jul         17.2          8.9        26.3       35.22    223.19\n",
+       "Ago         16.91         8.8        25.8       44.3     214.36\n",
+       "Sep         16.88         9.6        26         43.64    206.47\n",
+       "Oct         15.54         6          28.6       86.75    171.59\n",
+       "Nov         13.86         0.1        25.4      134.27    119.68\n",
+       "Dic         12.91         3          25.2      168.05     90.78"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Markdown object>"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#| echo: false\n",
+    "#| label: tbl-clima\n",
+    "#| tbl-cap: Temperatura media, mínima y máxima mensual, grados día de calefacción y refrigeración mensual del sitio [ºC].\n",
+    "from IPython.display import Markdown\n",
+    "from tabulate import tabulate\n",
+    "import pandas as pd\n",
+    "from pvlib.iotools import read_epw\n",
+    "f = \"epw/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw\"\n",
+    "weather, metadata = read_epw(f)\n",
+    "\n",
+    "gdc_base_f = 65\n",
+    "gdr_base_f = 50\n",
+    "gdc_base_c = (gdc_base_f - 32) * 5 / 9\n",
+    "gdr_base_c = (gdr_base_f - 32) * 5 / 9\n",
+    "\n",
+    "media_diaria = weather['temp_air'].resample('D').mean()\n",
+    "\n",
+    "estadisticas_mensuales = pd.DataFrame({\n",
+    "    'temp_media': weather['temp_air'].groupby(weather.index.month).mean(),\n",
+    "    'temp_min': weather['temp_air'].groupby(weather.index.month).min(),\n",
+    "    'temp_max': weather['temp_air'].groupby(weather.index.month).max(),\n",
+    "})\n",
+    "meses_es = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']\n",
+    "estadisticas_mensuales.index = [meses_es[i - 1] for i in estadisticas_mensuales.index]\n",
+    "estadisticas_mensuales['GDCA18.3'] = (gdc_base_c - media_diaria).clip(lower=0).groupby(media_diaria.index.month).sum().values\n",
+    "estadisticas_mensuales['GDRA10'] = (media_diaria - gdr_base_c).clip(lower=0).groupby(media_diaria.index.month).sum().values\n",
+    "estadisticas_mensuales = estadisticas_mensuales.round(2)\n",
+    "\n",
+    "Markdown(tabulate(estadisticas_mensuales, headers='keys'))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dae00969",
+   "metadata": {},
+   "source": [
+    "Se observa en la @tbl-clima que el más cálido es el mes de mayo, con una temperatura media de 18.7 °C y una temperatura máxima de 31.6 °C, y el más frío es enero, con una temperatura media de 12.2 °C y una temperatura mínima de 2.4 °C. Mayo también es el mes con mayor necesidad de refrigeración, con 269.79 grados día de refrigeración, mientras que enero es el mes con mayor necesidad de calefacción, con 189.89 grados día de calefacción.\n",
+    "\n",
+    "\n",
+    "a. bioclima: templado subhúmedo @comision_nacional_de_vivienda_conavi_estrategias_2021\n",
+    "\n",
+    "pesada con el volumen\n",
+    "\n",
+    "temporada cálida\n",
+    "\n",
+    "aumentar clo\n",
+    "\n",
+    "objetivo: aumentar confort térmico disminuyendo el disconfort cálido (dimsinuir grados hora de refrigeración)\n",
+    "\n",
+    "ventilación estrategia versátil\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3",
+   "path": "/home/acb/estrategias-cdmx/.venv/share/jupyter/kernels/python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

@@ -1,0 +1,85 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Reporte\"\n",
+        "---\n",
+        "\n",
+        "## 1. Clima\n",
+        "\n",
+        "La ubicación del EPW (epw/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw) es alcaldía Miguel Hidalgo, Ciudad de México @lawrie_climatewebsitewmo_region_4_north_and_central_americamex_mexico_2026 (clave INEGI 090160001). La clasificación del bioclima del sitio es templado húmedo @noauthor_anexo_nodate y la zona térmica de acuerdo con los grados día reportados por CONUEE es 3A @comision_nacional_de_vivienda_conavi_estrategias_2021.\n",
+        "\n",
+        "Los Grados Día de Calefacción Anual base 65 Grados Fahrenheit (GDCA65F, 18.3 °C) reportados por CONUEE son 2351, y los Grados Día de Refrigeración Anual base 50 Grados Fahrenheit (GDRA50F, 10 °C) son 4959 @noauthor_gradosdia_nodate."
+      ],
+      "id": "d55ef95b"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| label: tbl-clima\n",
+        "#| tbl-cap: Temperatura media, mínima y máxima mensual, grados día de calefacción y refrigeración mensual del sitio.\n",
+        "from IPython.display import Markdown\n",
+        "from tabulate import tabulate\n",
+        "import pandas as pd\n",
+        "from pvlib.iotools import read_epw\n",
+        "f = \"epw/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw\"\n",
+        "weather, metadata = read_epw(f)\n",
+        "\n",
+        "gdc_base_f = 65\n",
+        "gdr_base_f = 50\n",
+        "hdd_base_c = (hdd_base_f - 32) * 5 / 9\n",
+        "gdr_base_c = (gdr_base_f - 32) * 5 / 9\n",
+        "\n",
+        "media_diaria = weather['temp_air'].resample('D').mean()\n",
+        "\n",
+        "estadisticas_mensuales = pd.DataFrame({\n",
+        "    'temp_media': weather['temp_air'].groupby(weather.index.month).mean(),\n",
+        "    'temp_min': weather['temp_air'].groupby(weather.index.month).min(),\n",
+        "    'temp_max': weather['temp_air'].groupby(weather.index.month).max(),\n",
+        "})\n",
+        "meses_es = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']\n",
+        "estadisticas_mensuales.index = [meses_es[i - 1] for i in estadisticas_mensuales.index]\n",
+        "estadisticas_mensuales['GDCA18.3'] = (hdd_base_c - media_diaria).clip(lower=0).groupby(media_diaria.index.month).sum().values\n",
+        "estadisticas_mensuales['GDRA10'] = (media_diaria - gdr_base_c).clip(lower=0).groupby(media_diaria.index.month).sum().values\n",
+        "estadisticas_mensuales = estadisticas_mensuales.round(2)\n",
+        "\n",
+        "Markdown(tabulate(estadisticas_mensuales, headers='keys'))"
+      ],
+      "id": "tbl-clima",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "a. bioclima: templado subhúmedo @comision_nacional_de_vivienda_conavi_estrategias_2021\n",
+        "\n",
+        "pesada con el volumen\n",
+        "\n",
+        "temporada cálida\n",
+        "\n",
+        "aumentar clo\n",
+        "\n",
+        "objetivo: aumentar confort térmico disminuyendo el disconfort cálido (dimsinuir grados hora de refrigeración)\n",
+        "\n",
+        "ventilación estrategia versátil\n"
+      ],
+      "id": "07a357ad"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/home/acb/estrategias-cdmx/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

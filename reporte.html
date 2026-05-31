@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es-MX" xml:lang="es-MX"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -53,10 +53,10 @@ div.csl-indent {
 <script src="reporte_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="reporte_files/libs/quarto-html/anchor.min.js"></script>
 <link href="reporte_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="reporte_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="reporte_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="reporte_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="reporte_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="reporte_files/libs/bootstrap/bootstrap-a9c49a76390bc7a64be4dd482d642246.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="reporte_files/libs/bootstrap/bootstrap-1ebeed31167a0ad25fd9d37c53f7d8a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -86,19 +86,137 @@ div.csl-indent {
 </header>
 
 
-<section id="clima" class="level1">
-<h1>1. Clima</h1>
+<section id="clima" class="level2">
+<h2 class="anchored" data-anchor-id="clima">1. Clima</h2>
+<p>La ubicación del EPW (epw/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw) es alcaldía Miguel Hidalgo, Ciudad de México <span class="citation" data-cites="lawrie_climatewebsitewmo_region_4_north_and_central_americamex_mexico_2026"><a href="#ref-lawrie_climatewebsitewmo_region_4_north_and_central_americamex_mexico_2026" role="doc-biblioref">[1]</a></span> (clave INEGI 090160001). La clasificación del bioclima del sitio es templado húmedo <span class="citation" data-cites="noauthor_anexo_nodate"><a href="#ref-noauthor_anexo_nodate" role="doc-biblioref">[2]</a></span> y la zona térmica de acuerdo con los grados día reportados por CONUEE es 3A <span class="citation" data-cites="comision_nacional_de_vivienda_conavi_estrategias_2021"><a href="#ref-comision_nacional_de_vivienda_conavi_estrategias_2021" role="doc-biblioref">[3]</a></span>. Los Grados Día de Calefacción Anual base 65 Grados Fahrenheit (GDCA65F, 18.3 °C) reportados por CONUEE son 2351, y los Grados Día de Refrigeración Anual base 50 Grados Fahrenheit (GDRA50F, 10 °C) son 4959 <span class="citation" data-cites="noauthor_gradosdia_nodate"><a href="#ref-noauthor_gradosdia_nodate" role="doc-biblioref">[4]</a></span>.</p>
+<p>En la <a href="#tbl-clima" class="quarto-xref">Tabla&nbsp;1</a> se muestran la temperatura media, mínima y máxima mensual, así como los grados día de calefacción y refrigeración mensual del sitio calculados de acuerdo con <span class="citation" data-cites="de_buen_r_clasificacion_2020"><a href="#ref-de_buen_r_clasificacion_2020" role="doc-biblioref">[5]</a></span> y <span class="citation" data-cites="american_society_of_heating_refrigerating_and_air-conditioning_engineers_ashrae_ansiashrae_2020"><a href="#ref-american_society_of_heating_refrigerating_and_air-conditioning_engineers_ashrae_ansiashrae_2020" role="doc-biblioref">[6]</a></span>.</p>
+<div class="cell" data-execution_count="1">
+<div id="tbl-clima" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="1">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-clima-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;1: Temperatura media, mínima y máxima mensual, grados día de calefacción y refrigeración mensual del sitio [ºC].
+</figcaption>
+<div aria-describedby="tbl-clima-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="1">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">temp_media</th>
+<th style="text-align: right;">temp_min</th>
+<th style="text-align: right;">temp_max</th>
+<th style="text-align: right;">GDCA18.3</th>
+<th style="text-align: right;">GDRA10</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ene</td>
+<td style="text-align: right;">12.21</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">24.4</td>
+<td style="text-align: right;">189.89</td>
+<td style="text-align: right;">68.44</td>
+</tr>
+<tr class="even">
+<td>Feb</td>
+<td style="text-align: right;">14.67</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">102.61</td>
+<td style="text-align: right;">130.72</td>
+</tr>
+<tr class="odd">
+<td>Mar</td>
+<td style="text-align: right;">16.93</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">28.9</td>
+<td style="text-align: right;">45.67</td>
+<td style="text-align: right;">214.91</td>
+</tr>
+<tr class="even">
+<td>Abr</td>
+<td style="text-align: right;">18.31</td>
+<td style="text-align: right;">8.1</td>
+<td style="text-align: right;">30.1</td>
+<td style="text-align: right;">21.98</td>
+<td style="text-align: right;">249.34</td>
+</tr>
+<tr class="odd">
+<td>May</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: right;">8.3</td>
+<td style="text-align: right;">31.6</td>
+<td style="text-align: right;">16.87</td>
+<td style="text-align: right;">269.79</td>
+</tr>
+<tr class="even">
+<td>Jun</td>
+<td style="text-align: right;">17.93</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">28.3</td>
+<td style="text-align: right;">26.3</td>
+<td style="text-align: right;">237.94</td>
+</tr>
+<tr class="odd">
+<td>Jul</td>
+<td style="text-align: right;">17.2</td>
+<td style="text-align: right;">8.9</td>
+<td style="text-align: right;">26.3</td>
+<td style="text-align: right;">35.22</td>
+<td style="text-align: right;">223.19</td>
+</tr>
+<tr class="even">
+<td>Ago</td>
+<td style="text-align: right;">16.91</td>
+<td style="text-align: right;">8.8</td>
+<td style="text-align: right;">25.8</td>
+<td style="text-align: right;">44.3</td>
+<td style="text-align: right;">214.36</td>
+</tr>
+<tr class="odd">
+<td>Sep</td>
+<td style="text-align: right;">16.88</td>
+<td style="text-align: right;">9.6</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">43.64</td>
+<td style="text-align: right;">206.47</td>
+</tr>
+<tr class="even">
+<td>Oct</td>
+<td style="text-align: right;">15.54</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">28.6</td>
+<td style="text-align: right;">86.75</td>
+<td style="text-align: right;">171.59</td>
+</tr>
+<tr class="odd">
+<td>Nov</td>
+<td style="text-align: right;">13.86</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">25.4</td>
+<td style="text-align: right;">134.27</td>
+<td style="text-align: right;">119.68</td>
+</tr>
+<tr class="even">
+<td>Dic</td>
+<td style="text-align: right;">12.91</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">25.2</td>
+<td style="text-align: right;">168.05</td>
+<td style="text-align: right;">90.78</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Se observa en la <a href="#tbl-clima" class="quarto-xref">Tabla&nbsp;1</a> que el más cálido es el mes de mayo, con una temperatura media de 18.7 °C y una temperatura máxima de 31.6 °C, y el más frío es enero, con una temperatura media de 12.2 °C y una temperatura mínima de 2.4 °C. Mayo también es el mes con mayor necesidad de refrigeración, con 269.79 grados día de refrigeración, mientras que enero es el mes con mayor necesidad de calefacción, con 189.89 grados día de calefacción.</p>
 <ol type="a">
-<li>bioclima: templado subhúmedo <span class="citation" data-cites="comision_nacional_de_vivienda_conavi_estrategias_2021"><a href="#ref-comision_nacional_de_vivienda_conavi_estrategias_2021" role="doc-biblioref">[1]</a></span></li>
+<li>bioclima: templado subhúmedo <span class="citation" data-cites="comision_nacional_de_vivienda_conavi_estrategias_2021"><a href="#ref-comision_nacional_de_vivienda_conavi_estrategias_2021" role="doc-biblioref">[3]</a></span></li>
 </ol>
-<p>templado húmedo <span class="citation" data-cites="noauthor_anexo_nodate"><a href="#ref-noauthor_anexo_nodate" role="doc-biblioref">[2]</a></span></p>
-<p>no importa, diagnóstico más o menos independiente del clima, porque se va a evaluar sitio directamente con construcción</p>
-<ol start="2" type="a">
-<li>grados hora disconfort</li>
-</ol>
-<p>Estado Distrito Federal Municipio Miguel Hidalgo Localidad Miguel Hidalgo (Clave INEGI 090160001) ZonaTérmica 3A</p>
-<p>Grados Día de Calefacción Anual base 65 Grados Fahrenheit (GDCA65F) 2,351</p>
-<p>Grados Día de Refrigeración Anual base 65 Grados Fahrenheit (GDRA50F) 4,959 <span class="citation" data-cites="noauthor_gradosdia_nodate"><a href="#ref-noauthor_gradosdia_nodate" role="doc-biblioref">[3]</a></span></p>
 <p>pesada con el volumen</p>
 <p>temporada cálida</p>
 <p>aumentar clo</p>
@@ -108,14 +226,23 @@ div.csl-indent {
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referencias</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-comision_nacional_de_vivienda_conavi_estrategias_2021" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">C. N. de Vivienda (Conavi), <span>“Estrategias de Diseño Arquitectonico”</span>. Subdirección General de Análisis de Vivienda, Prospectiva y Sustentabilidad, Ciudad de México, México, 2021. Consultado: el 29 de mayo de 2026. [En línea]. Disponible en: <a href="https://siesco.conavi.gob.mx/doc/tecnicos/diseno/Estrategias%20de%20Dise%C3%B1o%20Arquitectonico.pdf">https://siesco.conavi.gob.mx/doc/tecnicos/diseno/Estrategias%20de%20Dise%C3%B1o%20Arquitectonico.pdf</a></div>
+<div id="ref-lawrie_climatewebsitewmo_region_4_north_and_central_americamex_mexico_2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">L. K. Lawrie y D. B. Crawley, <span>“<span>\</span>climatewebsite<span>\</span><span>WMO</span>_Region_4_North_and_Central_America<span>\</span><span>MEX</span>_Mexico”</span>, <em>Development of Global Typical Meteorological Years (TMYx)</em>. Climate.OneBuilding, 2026. Consultado: el 31 de mayo de 2026. [En línea]. Disponible en: <a href="https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/MEX_Mexico/CMX_Cuidad_de_Mexico/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.zip">https://climate.onebuilding.org/WMO_Region_4_North_and_Central_America/MEX_Mexico/CMX_Cuidad_de_Mexico/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.zip</a></div>
 </div>
 <div id="ref-noauthor_anexo_nodate" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[2] </div><div class="csl-right-inline"><span>“Anexo 1. Listado de regiones bioclimáticas”</span>. Consultado: el 29 de mayo de 2026. [En línea]. Disponible en: <a href="https://portalmx.infonavit.org.mx/wps/wcm/connect/005dcf74-d918-41aa-acfa-927e7b33d98a/12.+Anexo%2B1.%2BListado%2Bde%2Bregiones%2Bbioclim%C3%A1ticas.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-005dcf74-d918-41aa-acfa-927e7b33d98a-mmCFC0">https://portalmx.infonavit.org.mx/wps/wcm/connect/005dcf74-d918-41aa-acfa-927e7b33d98a/12.+Anexo%2B1.%2BListado%2Bde%2Bregiones%2Bbioclim%C3%A1ticas.pdf?MOD=AJPERES&amp;CONVERT_TO=url&amp;CACHEID=ROOTWORKSPACE-005dcf74-d918-41aa-acfa-927e7b33d98a-mmCFC0</a></div>
 </div>
+<div id="ref-comision_nacional_de_vivienda_conavi_estrategias_2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Comisión Nacional de Vivienda (Conavi), <span>“Estrategias de Diseño Arquitectonico”</span>. Subdirección General de Análisis de Vivienda, Prospectiva y Sustentabilidad, Ciudad de México, México, 2021. Consultado: el 29 de mayo de 2026. [En línea]. Disponible en: <a href="https://siesco.conavi.gob.mx/doc/tecnicos/diseno/Estrategias%20de%20Dise%C3%B1o%20Arquitectonico.pdf">https://siesco.conavi.gob.mx/doc/tecnicos/diseno/Estrategias%20de%20Dise%C3%B1o%20Arquitectonico.pdf</a></div>
+</div>
 <div id="ref-noauthor_gradosdia_nodate" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline"><span>“<span>GradosDia</span> 29062021 (a945717)”</span>. Consultado: el 29 de mayo de 2026. [En línea]. Disponible en: <a href="https://a945717.fmphost.com/fmi/webd/GradosDia%2029062021">https://a945717.fmphost.com/fmi/webd/GradosDia%2029062021</a></div>
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline"><span>“<span>GradosDia</span> 29062021 (a945717)”</span>. Consultado: el 29 de mayo de 2026. [En línea]. Disponible en: <a href="https://a945717.fmphost.com/fmi/webd/GradosDia%2029062021">https://a945717.fmphost.com/fmi/webd/GradosDia%2029062021</a></div>
+</div>
+<div id="ref-de_buen_r_clasificacion_2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">O. de Buen R y N. Morales M, <span>“Clasificación de climas y su aplicación a la norma para envolvente de viviendas: notas para discusión”</span>, <em>Cuadernos de la CONUEE</em>, vol. 6, 2020, Consultado: el 31 de mayo de 2026. [En línea]. Disponible en: <a href="https://www.conuee.gob.mx/transparencia/boletines/Cuadernos/cuaderno6NvoCiclo.pdf">https://www.conuee.gob.mx/transparencia/boletines/Cuadernos/cuaderno6NvoCiclo.pdf</a></div>
+</div>
+<div id="ref-american_society_of_heating_refrigerating_and_air-conditioning_engineers_ashrae_ansiashrae_2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">R. and A.-C. E. (ASHRAE). American Society of Heating y A. N. S. I. (ANSI), <span>“<span>ANSI</span>/<span>ASHRAE</span> <span>Addendum</span> a to <span>ANSI</span>/<span>ASHRAE</span> <span>Standard</span> 169-2013”</span>, <em>Climatic Data for Building Design Standards</em>, jul. 2020, Consultado: el 31 de mayo de 2026. [En línea]. Disponible en: <a href="https://xp20.ashrae.org/standard169/169_2013_a_20201012.pdf">https://xp20.ashrae.org/standard169/169_2013_a_20201012.pdf</a></div>
 </div>
 </div></section></div></main>
 <!-- /main column -->
