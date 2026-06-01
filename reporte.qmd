@@ -4,9 +4,9 @@ title: "Reporte"
 
 ## 1. Clima
 
-La ubicación del EPW (epw/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw) es alcaldía Miguel Hidalgo, Ciudad de México @lawrie_climatewebsitewmo_region_4_north_and_central_americamex_mexico_2026 (clave INEGI 090160001). La clasificación del bioclima del sitio es templado húmedo @noauthor_anexo_nodate y la zona térmica de acuerdo con los grados día reportados por CONUEE es 3A @comision_nacional_de_vivienda_conavi_estrategias_2021. Los Grados Día de Calefacción Anual base 65 Grados Fahrenheit (GDCA65F, 18.3 °C) reportados por CONUEE son 2351, y los Grados Día de Refrigeración Anual base 50 Grados Fahrenheit (GDRA50F, 10 °C) son 4959 @noauthor_gradosdia_nodate.
+La ubicación del EPW (epw/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw) es alcaldía Miguel Hidalgo, Ciudad de México @lawrie_climatewebsitewmo_region_4_north_and_central_americamex_mexico_2026 (clave INEGI 090160001). La clasificación del bioclima del sitio de acuerdo con la Comisión Nacional de Vivienda (CONAVI, 2010) es templado húmedo @noauthor_anexo_nodate y la zona térmica de acuerdo con los grados día reportados por la Comisión Nacional para el Uso Eficiente de la Energía (CONUEE, 2021) es 3A. Los Grados Día de Calefacción Anual base 65 Grados Fahrenheit (GDCA65F, 18.3 °C) reportados por CONUEE son 2351, y los Grados Día de Refrigeración Anual base 50 Grados Fahrenheit (GDRA50F, 10 °C) son 4959 @noauthor_gradosdia_2021.
 
-En la @tbl-clima se muestran la temperatura media, mínima y máxima mensual, así como los grados día de calefacción y refrigeración mensual del sitio calculados de acuerdo con @de_buen_r_clasificacion_2020 y @american_society_of_heating_refrigerating_and_air-conditioning_engineers_ashrae_ansiashrae_2020.
+En la @tbl-clima se muestran la temperatura media, mínima y máxima mensual, así como los grados día de calefacción y refrigeración mensual del sitio calculados de acuerdo con @de_buen_r_clasificacion_2020.
 
 ```{python}
 #| echo: false
@@ -24,8 +24,6 @@ gdr_base_f = 50
 gdc_base_c = (gdc_base_f - 32) * 5 / 9
 gdr_base_c = (gdr_base_f - 32) * 5 / 9
 
-media_diaria = weather['temp_air'].resample('D').mean()
-
 estadisticas_mensuales = pd.DataFrame({
     'temp_media': weather['temp_air'].groupby(weather.index.month).mean(),
     'temp_min': weather['temp_air'].groupby(weather.index.month).min(),
@@ -33,26 +31,40 @@ estadisticas_mensuales = pd.DataFrame({
 })
 meses_es = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
 estadisticas_mensuales.index = [meses_es[i - 1] for i in estadisticas_mensuales.index]
-estadisticas_mensuales['GDCA18.3'] = (gdc_base_c - media_diaria).clip(lower=0).groupby(media_diaria.index.month).sum().values
-estadisticas_mensuales['GDRA10'] = (media_diaria - gdr_base_c).clip(lower=0).groupby(media_diaria.index.month).sum().values
+
+# Calcular GDC/GDR con CONUEE horas de los dias promedio mensuales y convertir a totales mensuales
+monthly_hourly_mean = weather['temp_air'].groupby([weather.index.month, weather.index.hour]).mean().unstack(level=1)
+monthly_hourly_mean = monthly_hourly_mean.reindex(columns=range(24))
+
+monthly_conuee_dd = pd.DataFrame({
+    'HDD18.3': (18.3 - monthly_hourly_mean).clip(lower=0).sum(axis=1) / 24,
+    'CDD10': (monthly_hourly_mean - 10).clip(lower=0).sum(axis=1) / 24,
+})
+
+days_in_month = weather['temp_air'].groupby(weather.index.month).size().div(24)
+monthly_totals = monthly_conuee_dd.mul(days_in_month.values, axis=0)
+monthly_totals.index = [meses_es[m - 1] for m in monthly_totals.index]
+
+estadisticas_mensuales['GDCA18.3'] = monthly_totals['HDD18.3'].values
+estadisticas_mensuales['GDRA10'] = monthly_totals['CDD10'].values
 estadisticas_mensuales = estadisticas_mensuales.round(2)
 
 Markdown(tabulate(estadisticas_mensuales, headers='keys'))
 ```
 
-Se observa en la @tbl-clima que el más cálido es el mes de mayo, con una temperatura media de 18.7 °C y una temperatura máxima de 31.6 °C, y el más frío es enero, con una temperatura media de 12.2 °C y una temperatura mínima de 2.4 °C. Mayo también es el mes con mayor necesidad de refrigeración, con 269.79 grados día de refrigeración, mientras que enero es el mes con mayor necesidad de calefacción, con 189.89 grados día de calefacción.
+Se observa en la @tbl-clima que el más cálido es el mes de mayo, con una temperatura media de 18.7 °C y una temperatura máxima de 31.6 °C, y el más frío es enero, con una temperatura media de 12.2 °C y una temperatura mínima de 2.4 °C. Mayo también es el mes con mayor necesidad de refrigeración, con 269.79 grados día de refrigeración, mientras que enero es el mes con mayor necesidad de calefacción, con 198.29 grados día de calefacción.
 
+## 2. Caso base (CB)
 
-a. bioclima: templado subhúmedo @comision_nacional_de_vivienda_conavi_estrategias_2021
+| Simplificación | Justificación |
+|----------------|---------------|
+| Redondeo de longitudes a 10 cm más cercanos | Rectángulos en Floorspace siguen malla (0.1 m). |
+| Longitudes perpendiculares a muro interior menores en 0.06 m | La frontera entre 2 espacios adyacentes está en 2 zonas térmicas simultáneamente, se reparte grosor grosor del muro entre ambas zonas.
+| Alturas de ambos pisos iguales | Se dividió la altura total entre las 2 plantas suponiendo que el piso y el techo de planta baja (PB) y planta alta (PA) tienen el mismo grosor. Se distribuye el grosor entre las zonas térmicas adyacentes porque la frontera es de tipo interzona. |
 
-pesada con el volumen
+: Justificación de simplificaciones en geometría {#tbl-geometria}
 
-temporada cálida
+Propiedades de materiales: @noauthor_validacion_enerhabitatnotebookmaterialsini_nodate @noauthor_absorbed_nodate
 
-aumentar clo
-
-objetivo: aumentar confort térmico disminuyendo el disconfort cálido (dimsinuir grados hora de refrigeración)
-
-ventilación estrategia versátil
-
+impermeabilizante: @cemex_cemex_2024, @noauthor_overview_nodate, @lucero-alvarez_experimental_2011
 
