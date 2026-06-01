@@ -61,6 +61,10 @@ Se observa en la @tbl-clima que el más cálido es el mes de mayo, con una tempe
 | Redondeo de longitudes a 10 cm más cercanos | Rectángulos en Floorspace siguen malla (0.1 m). |
 | Longitudes perpendiculares a muro interior menores en 0.06 m | La frontera entre 2 espacios adyacentes está en 2 zonas térmicas simultáneamente, se reparte grosor grosor del muro entre ambas zonas.
 | Alturas de ambos pisos iguales | Se dividió la altura total entre las 2 plantas suponiendo que el piso y el techo de planta baja (PB) y planta alta (PA) tienen el mismo grosor. Se distribuye el grosor entre las zonas térmicas adyacentes porque la frontera es de tipo interzona. |
+| Sin zonas térmicas para espacios abiertos (pasillo) | No se pueden modelar en OpenStudio |
+| Escaleras cubo de doble altura | Simplificación sin masa térmica |
+| Boiler parte del baño | Boiler? |
+| Ventana del comercio de 2 m x h | Simplificación de planos |
 
 : Justificación de simplificaciones en geometría {#tbl-geometria}
 
