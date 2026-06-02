@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 25.2.0-cf7368216c, YMD=2026.06.02 14:42
+Program Version,EnergyPlus, Version 25.2.0-cf7368216c, YMD=2026.06.02 14:57
 ! <Version>, Version ID
  Version, 25.2
 ! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
@@ -82,11 +82,11 @@ Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.
 ! <ZoneInfiltration Airflow Stats Nominal>,Name,Input Object, Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/Exterior Surface Area {m3/s-m2},ACH - Air Changes per Hour,Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2}
  ZoneInfiltration Airflow Stats Nominal, S:SALA 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,SALA,14.96,0.0,6.441E-003,4.306E-004,1.140E-004,0.500,1.000,0.000,0.000,0.000
  ZoneInfiltration Airflow Stats Nominal, S:RECAMARAPB 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,RECAMARAPB,11.44,0.0,4.926E-003,4.306E-004,1.347E-004,0.500,1.000,0.000,0.000,0.000
- ZoneInfiltration Airflow Stats Nominal, S:CIRCULACION 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,CIRCULACION,3.80,0.0,1.636E-003,4.306E-004,9.100E-005,0.500,1.000,0.000,0.000,0.000
- ZoneInfiltration Airflow Stats Nominal, S:ESCALERA 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,ESCALERA,5.94,0.0,5.115E-003,8.611E-004,1.484E-004,0.500,1.000,0.000,0.000,0.000
- ZoneInfiltration Airflow Stats Nominal, S:COMERCIO 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,COMERCIO,11.16,0.0,4.805E-003,4.306E-004,2.039E-004,0.500,1.000,0.000,0.000,0.000
  ZoneInfiltration Airflow Stats Nominal, S:RECAMARAPA 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,RECAMARAPA,15.18,0.0,6.536E-003,4.306E-004,1.049E-004,0.500,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, S:ESCALERA 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,ESCALERA,5.94,0.0,5.115E-003,8.611E-004,1.484E-004,0.500,1.000,0.000,0.000,0.000
  ZoneInfiltration Airflow Stats Nominal, S:BANO 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,BANO,3.74,0.0,1.610E-003,4.306E-004,1.528E-004,0.500,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, S:COMERCIO 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,COMERCIO,11.16,0.0,4.805E-003,4.306E-004,2.039E-004,0.500,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, S:CIRCULACION 0P5CAH,ZoneInfiltration:DesignFlowRate,Constant-1.0,CIRCULACION,3.80,0.0,1.636E-003,4.306E-004,9.100E-005,0.500,1.000,0.000,0.000,0.000
 ! <AirFlow Model>, Simple
  AirFlow Model, Simple
 ! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined

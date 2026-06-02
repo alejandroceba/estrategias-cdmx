@@ -213,7 +213,7 @@
     "interior_lighting_section" : true,
     "measure_warning_section" : true,
     "monthly_overview_section" : true,
-    "muro_exterior" : 2125.5666122443358,
+    "muro_exterior" : 2125.5666122443363,
     "natural_gas_cooling_ip" : 0.0,
     "natural_gas_exterior_equipment_ip" : 0.0,
     "natural_gas_exterior_lighting_ip" : 0.0,
@@ -303,7 +303,7 @@
     "unmet_hours_tolerance_cooling" : 0.35999999999999999,
     "unmet_hours_tolerance_heating" : 0.35999999999999999,
     "utility_bills_rates_section" : true,
-    "ventana_3_mm" : 90.076707931193596,
+    "ventana_3_mm" : 90.07670793119361,
     "water_use_section" : true,
     "zone_condition_section" : true,
     "zone_equipment_detail_section" : true,
@@ -316,7 +316,7 @@
     "applicable" : true,
     "key_value" : "*",
     "reporting_frequency" : "timestep",
-    "variable_name" : "Site Outdoor Air Dyrbulb Temperature"
+    "variable_name" : "Site Outdoor Air Drybulb Temperature"
   },
   "Zone Mean Air Temperature_Bano" : 
   {

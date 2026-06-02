@@ -237,11 +237,11 @@ SpaceList,
   0p5cah,                                 !- Name
   S:Sala,                                 !- Space Name 1
   S:RecamaraPB,                           !- Space Name 2
-  S:Circulacion,                          !- Space Name 3
+  S:RecamaraPA,                           !- Space Name 3
   S:Escalera,                             !- Space Name 4
-  S:Comercio,                             !- Space Name 5
-  S:RecamaraPA,                           !- Space Name 6
-  S:Bano;                                 !- Space Name 7
+  S:Bano,                                 !- Space Name 5
+  S:Comercio,                             !- Space Name 6
+  S:Circulacion;                          !- Space Name 7
 
 ZoneInfiltration:DesignFlowRate,
   0p5cah,                                 !- Name
@@ -1731,7 +1731,7 @@ Output:Variable,
 
 Output:Variable,
   *,                                      !- Key Value
-  Site Outdoor Air Dyrbulb Temperature,   !- Variable Name
+  Site Outdoor Air Drybulb Temperature,   !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OutputControl:Table:Style,

@@ -873,7 +873,7 @@ OS:WeatherFile,
   -99.183,                                !- Longitude {deg}
   -6,                                     !- Time Zone {hr}
   2303,                                   !- Elevation {m}
-  /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-e33d-a83c-fab9-f55b-1780432659-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw, !- Url
+  C:/Users/acb/AppData/Local/Temp/osmodel-4eaf-1183-7238-52fb-1780433735-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw, !- Url
   965F3372,                               !- Checksum
   ,                                       !- Start Date Actual Year
   Sunday;                                 !- Start Day of Week
@@ -2449,58 +2449,58 @@ OS:Surface,
   -10, 7.1, 3.1;                          !- X,Y,Z Vertex 4 {m}
 
 OS:Output:Variable,
-  {2cb9f1b2-4823-4469-88df-e7f336b07c31}, !- Handle
+  {f058075b-a0d8-42d8-b37e-0b086c484db0}, !- Handle
   Output Variable 2,                      !- Name
   Bano,                                   !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {5a5081e9-9357-4ebc-b982-dd70c3f2553c}, !- Handle
+  {ec86c35c-a283-4888-a2a7-5c5f9d9f0eac}, !- Handle
   Output Variable 3,                      !- Name
   Escalera,                               !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {898ac976-01af-4865-840b-e2356d94eb8e}, !- Handle
+  {8bbcefcb-d4c7-443a-9091-0c8aa2914cef}, !- Handle
   Output Variable 4,                      !- Name
   Circulacion,                            !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {2be6600d-a115-41d7-a7ef-bf57e039e9c9}, !- Handle
+  {445c8e8e-b197-4bd2-8e8b-cc618829995a}, !- Handle
   Output Variable 5,                      !- Name
   Comercio,                               !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {164859d3-903d-4d37-9e03-947e1f9e003c}, !- Handle
+  {6c9b53e5-aea6-4a5c-be8d-18c73358ff38}, !- Handle
   Output Variable 6,                      !- Name
   Sala,                                   !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {40a47ba8-5099-425d-a309-55a479564412}, !- Handle
+  {82e247f0-3b0a-448f-99b8-bc16cabb193d}, !- Handle
   Output Variable 7,                      !- Name
   RecamaraPB,                             !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {0e0511be-2fd7-4b52-872e-5d463b70a55b}, !- Handle
+  {1ba5df6d-2784-4fa0-8cfa-8712c9471a08}, !- Handle
   Output Variable 8,                      !- Name
   RecamaraPA,                             !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {edb1a2cf-d6d2-4a29-9205-29a87f0d359a}, !- Handle
+  {793fc319-7e2c-4585-b512-76729ac39c4e}, !- Handle
   Output Variable 9,                      !- Name
   *,                                      !- Key Value
-  Site Outdoor Air Dyrbulb Temperature,   !- Variable Name
+  Site Outdoor Air Drybulb Temperature,   !- Variable Name
   timestep;                               !- Reporting Frequency
 

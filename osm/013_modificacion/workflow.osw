@@ -91,7 +91,7 @@
          "arguments" : 
          {
             "reporting_frequency" : "timestep",
-            "variable_name" : "Site Outdoor Air Dyrbulb Temperature"
+            "variable_name" : "Site Outdoor Air Drybulb Temperature"
          },
          "description" : "This measure adds an output variable at the requested reporting frequency.",
          "measure_dir_name" : "AddOutputVariable",
@@ -106,6 +106,6 @@
          "name" : "OpenStudio Results"
       }
    ],
-   "updated_at" : "20260602T204411Z",
+   "updated_at" : "20260602T205713Z",
    "weather_file" : "MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw"
 }
