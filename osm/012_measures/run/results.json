@@ -1,0 +1,58 @@
+{
+  "Site Outdoor Drybulb Temperature" : 
+  {
+    "applicable" : true,
+    "key_value" : "*",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Site Outdoor Air Drybulb Temperature"
+  },
+  "Zone Mean Air Temperature_Bano" : 
+  {
+    "applicable" : true,
+    "key_value" : "Bano",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Zone Mean Air Temperature"
+  },
+  "Zone Mean Air Temperature_Circ" : 
+  {
+    "applicable" : true,
+    "key_value" : "Circulacion",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Zone Mean Air Temperature"
+  },
+  "Zone Mean Air Temperature_Com" : 
+  {
+    "applicable" : true,
+    "key_value" : "Comercio",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Zone Mean Air Temperature"
+  },
+  "Zone Mean Air Temperature_Esc" : 
+  {
+    "applicable" : true,
+    "key_value" : "Escalera",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Zone Mean Air Temperature"
+  },
+  "Zone Mean Air Temperature_RecPA" : 
+  {
+    "applicable" : true,
+    "key_value" : "RecamaraPA",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Zone Mean Air Temperature"
+  },
+  "Zone Mean Air Temperature_RecPB" : 
+  {
+    "applicable" : true,
+    "key_value" : "RecamaraPB",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Zone Mean Air Temperature"
+  },
+  "Zone Mean Air Temperature_Sala" : 
+  {
+    "applicable" : true,
+    "key_value" : "Sala",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Zone Mean Air Temperature"
+  }
+}

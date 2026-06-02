@@ -1,0 +1,644 @@
+[13:38:17.809752 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing run directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run
+[13:38:17.810594 DEBUG] [openstudio.workflow.OSWorkflow] Registering that the workflow has started with the adapter
+[13:38:17.810979 DEBUG] [openstudio.workflow.OSWorkflow] Initialization - selected = true
+[13:38:17.811354 DEBUG] [openstudio.workflow.OSWorkflow] The root_dir for the datapoint is /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources
+[13:38:17.811432 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing generated files directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/generated_files
+[13:38:17.811924 DEBUG] [openstudio.workflow.OSWorkflow] Creating generated files directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/generated_files
+[13:38:17.812176 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing reports directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/reports
+[13:38:17.813067 INFO] [openstudio.workflow.OSWorkflow] Attempting to validate the measure workflow
+[13:38:17.813150 DEBUG] [openstudio.WorkflowJSON] Validating step 0
+[13:38:17.819836 DEBUG] [openstudio.WorkflowJSON] Validating step 1
+[13:38:17.839637 DEBUG] [openstudio.WorkflowJSON] Validating step 2
+[13:38:17.844388 DEBUG] [openstudio.WorkflowJSON] Validating step 3
+[13:38:17.849039 DEBUG] [openstudio.WorkflowJSON] Validating step 4
+[13:38:17.854223 DEBUG] [openstudio.WorkflowJSON] Validating step 5
+[13:38:17.859482 DEBUG] [openstudio.WorkflowJSON] Validating step 6
+[13:38:17.867182 DEBUG] [openstudio.WorkflowJSON] Validating step 7
+[13:38:17.889182 INFO] [openstudio.workflow.OSWorkflow] Validated the measure workflow
+[13:38:17.889294 DEBUG] [openstudio.workflow.OSWorkflow] Finding and loading the seed file
+[13:38:17.893129 INFO] [openstudio.worklow.Util] Loading OSM model
+[13:38:17.893520 INFO] [openstudio.worklow.Util] Reading in OSM model /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/012_measures.osm
+[13:38:17.905766 DEBUG] [openstudio.osversion.VersionTranslator] Starting translation from Version 3.11.0.
+[13:38:17.935890 DEBUG] [openstudio.osversion.VersionTranslator] Initial model has 205 objects.
+[13:38:17.936096 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 205 objects in IDF form.
+[13:38:17.955123 DEBUG] [utilities.idf.Workspace] Workspace::isValid called.
+[13:38:17.974288 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 205 objects in Model form.
+[13:38:17.975233 DEBUG] [openstudio.workflow.OSWorkflow] Initialize the weather file from osw
+[13:38:17.975364 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file defined by osw MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:17.986810 INFO] [openstudio.EpwFile] Found 3 ground temperature depths in the EPW file '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw'
+[13:38:17.987485 DEBUG] [openstudio.EpwFile] No Daylightings Saving start Date
+[13:38:17.990997 INFO] [openstudio.EpwFile] Successive data points (2022-Jan-31 to 2011-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw'. Data will be treated as typical (TMY)
+[13:38:18.093522 DEBUG] [openstudio.workflow.OSWorkflow] OpenStudioMeasures - selected = true
+[13:38:18.093643 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute OpenStudio Measures
+[13:38:18.093708 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ModelMeasure
+[13:38:18.093753 DEBUG] [openstudio.workflow.OSWorkflow] Running step 0
+[13:38:18.093880 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:18.093926 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:18.094712 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/000_AddOutputVariable'
+[13:38:18.100355 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb'
+[13:38:18.100434 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[13:38:18.100475 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb
+[13:38:18.100505 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[13:38:18.100531 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[13:38:18.102900 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, info.dli_fname = '/Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib'
+[13:38:18.103078 DEBUG] [PathHelpers] completeAndNormalize: result = /Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib
+[13:38:18.103164 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found '/Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib'
+[13:38:18.939697 DEBUG] [ruby] Found system gem abbrev 0.1.1, overrides embedded gem
+[13:38:18.939995 DEBUG] [ruby] Found system gem base64 0.1.1, overrides embedded gem
+[13:38:18.940186 DEBUG] [ruby] Found system gem benchmark 0.2.1, overrides embedded gem
+[13:38:18.940386 DEBUG] [ruby] Found system gem bigdecimal 3.1.3, overrides embedded gem
+[13:38:18.940946 DEBUG] [ruby] Found system gem bundler 2.4.10, overrides embedded gem
+[13:38:18.941169 DEBUG] [ruby] Found system gem cgi 0.3.6, overrides embedded gem
+[13:38:18.941442 DEBUG] [ruby] Found system gem csv 3.2.6, overrides embedded gem
+[13:38:18.941634 DEBUG] [ruby] Found system gem date 3.3.3, overrides embedded gem
+[13:38:18.941845 DEBUG] [ruby] Found system gem delegate 0.3.0, overrides embedded gem
+[13:38:18.942072 DEBUG] [ruby] Found system gem did_you_mean 1.6.3, overrides embedded gem
+[13:38:18.942269 DEBUG] [ruby] Found system gem digest 3.1.1, overrides embedded gem
+[13:38:18.942558 DEBUG] [ruby] Found system gem drb 2.1.1, overrides embedded gem
+[13:38:18.942875 DEBUG] [ruby] Found system gem english 0.7.2, overrides embedded gem
+[13:38:18.943232 DEBUG] [ruby] Found system gem erb 4.0.2, overrides embedded gem
+[13:38:18.943474 DEBUG] [ruby] Found system gem error_highlight 0.5.1, overrides embedded gem
+[13:38:18.943711 DEBUG] [ruby] Found system gem etc 1.4.2, overrides embedded gem
+[13:38:18.943908 DEBUG] [ruby] Found system gem fcntl 1.0.2, overrides embedded gem
+[13:38:18.944126 DEBUG] [ruby] Found system gem fiddle 1.1.1, overrides embedded gem
+[13:38:18.944324 DEBUG] [ruby] Found system gem fileutils 1.7.0, overrides embedded gem
+[13:38:18.944549 DEBUG] [ruby] Found system gem find 0.1.1, overrides embedded gem
+[13:38:18.944742 DEBUG] [ruby] Found system gem forwardable 1.3.3, overrides embedded gem
+[13:38:18.944937 DEBUG] [ruby] Found system gem getoptlong 0.2.0, overrides embedded gem
+[13:38:18.945144 DEBUG] [ruby] Found system gem io-console 0.6.0, overrides embedded gem
+[13:38:18.945346 DEBUG] [ruby] Found system gem io-nonblock 0.2.0, overrides embedded gem
+[13:38:18.945547 DEBUG] [ruby] Found system gem io-wait 0.3.0, overrides embedded gem
+[13:38:18.945847 DEBUG] [ruby] Found system gem ipaddr 1.2.5, overrides embedded gem
+[13:38:18.946221 DEBUG] [ruby] Found system gem irb 1.6.2, overrides embedded gem
+[13:38:18.946509 DEBUG] [ruby] Found system gem json 2.6.3, overrides embedded gem
+[13:38:18.946752 DEBUG] [ruby] Found system gem logger 1.5.3, overrides embedded gem
+[13:38:18.946957 DEBUG] [ruby] Found system gem mutex_m 0.1.2, overrides embedded gem
+[13:38:18.947183 DEBUG] [ruby] Found system gem net-http 0.3.2, overrides embedded gem
+[13:38:18.948034 DEBUG] [ruby] Found system gem net-protocol 0.2.1, overrides embedded gem
+[13:38:18.948253 DEBUG] [ruby] Found system gem nkf 0.1.2, overrides embedded gem
+[13:38:18.948468 DEBUG] [ruby] Found system gem observer 0.1.1, overrides embedded gem
+[13:38:18.948680 DEBUG] [ruby] Found system gem open-uri 0.3.0, overrides embedded gem
+[13:38:18.948872 DEBUG] [ruby] Found system gem open3 0.1.2, overrides embedded gem
+[13:38:18.949085 DEBUG] [ruby] Found system gem openssl 3.1.0, overrides embedded gem
+[13:38:18.949289 DEBUG] [ruby] Found system gem optparse 0.3.1, overrides embedded gem
+[13:38:18.949507 DEBUG] [ruby] Found system gem ostruct 0.5.5, overrides embedded gem
+[13:38:18.949720 DEBUG] [ruby] Found system gem pathname 0.2.1, overrides embedded gem
+[13:38:18.949920 DEBUG] [ruby] Found system gem pp 0.4.0, overrides embedded gem
+[13:38:18.950113 DEBUG] [ruby] Found system gem prettyprint 0.1.1, overrides embedded gem
+[13:38:18.950296 DEBUG] [ruby] Found system gem pstore 0.1.2, overrides embedded gem
+[13:38:18.950669 DEBUG] [ruby] Found system gem psych 5.0.1, overrides embedded gem
+[13:38:18.950888 DEBUG] [ruby] Found system gem racc 1.6.2, overrides embedded gem
+[13:38:18.951447 DEBUG] [ruby] Found system gem rdoc 6.5.0, overrides embedded gem
+[13:38:18.951810 DEBUG] [ruby] Found system gem readline 0.0.3, overrides embedded gem
+[13:38:18.952067 DEBUG] [ruby] Found system gem readline-ext 0.1.5, overrides embedded gem
+[13:38:18.952320 DEBUG] [ruby] Found system gem reline 0.3.2, overrides embedded gem
+[13:38:18.952529 DEBUG] [ruby] Found system gem resolv 0.2.2, overrides embedded gem
+[13:38:18.952734 DEBUG] [ruby] Found system gem resolv-replace 0.1.1, overrides embedded gem
+[13:38:18.952964 DEBUG] [ruby] Found system gem rinda 0.1.1, overrides embedded gem
+[13:38:18.953152 DEBUG] [ruby] Found system gem ruby2_keywords 0.0.5, overrides embedded gem
+[13:38:18.953352 DEBUG] [ruby] Found system gem securerandom 0.2.2, overrides embedded gem
+[13:38:18.953554 DEBUG] [ruby] Found system gem set 1.0.3, overrides embedded gem
+[13:38:18.953787 DEBUG] [ruby] Found system gem shellwords 0.1.0, overrides embedded gem
+[13:38:18.954021 DEBUG] [ruby] Found system gem singleton 0.1.1, overrides embedded gem
+[13:38:18.954261 DEBUG] [ruby] Found system gem stringio 3.0.4, overrides embedded gem
+[13:38:18.954661 DEBUG] [ruby] Found system gem strscan 3.0.5, overrides embedded gem
+[13:38:18.954941 DEBUG] [ruby] Found system gem syntax_suggest 1.0.2, overrides embedded gem
+[13:38:18.955183 DEBUG] [ruby] Found system gem syslog 0.1.1, overrides embedded gem
+[13:38:18.955410 DEBUG] [ruby] Found system gem tempfile 0.1.3, overrides embedded gem
+[13:38:18.955766 DEBUG] [ruby] Found system gem time 0.2.2, overrides embedded gem
+[13:38:18.955988 DEBUG] [ruby] Found system gem timeout 0.3.1, overrides embedded gem
+[13:38:18.956201 DEBUG] [ruby] Found system gem tmpdir 0.1.3, overrides embedded gem
+[13:38:18.956397 DEBUG] [ruby] Found system gem tsort 0.1.1, overrides embedded gem
+[13:38:18.956587 DEBUG] [ruby] Found system gem un 0.2.1, overrides embedded gem
+[13:38:18.956799 DEBUG] [ruby] Found system gem uri 0.12.1, overrides embedded gem
+[13:38:18.956991 DEBUG] [ruby] Found system gem weakref 0.1.2, overrides embedded gem
+[13:38:18.957226 DEBUG] [ruby] Found system gem yaml 0.2.1, overrides embedded gem
+[13:38:18.957533 DEBUG] [ruby] Found system gem zlib 3.0.0, overrides embedded gem
+[13:38:18.973984 DEBUG] [ruby] Found system gem bundler 2.4.10, overrides embedded gem
+[13:38:18.997972 DEBUG] [ruby] Found system gem rexml 3.2.5, overrides embedded gem
+[13:38:19.008895 DEBUG] [ruby] Adding dependency on debug '~> 1.7.1'
+[13:38:19.009160 DEBUG] [ruby] Adding dependency on abbrev '~> 0.1.1'
+[13:38:19.009490 DEBUG] [ruby] Adding dependency on base64 '~> 0.1.1'
+[13:38:19.009627 DEBUG] [ruby] Adding dependency on benchmark '~> 0.2.1'
+[13:38:19.009822 DEBUG] [ruby] Adding dependency on bigdecimal '~> 3.1.3'
+[13:38:19.010019 DEBUG] [ruby] Adding dependency on bundler '~> 2.4.10'
+[13:38:19.010140 DEBUG] [ruby] Adding dependency on cgi '~> 0.3.6'
+[13:38:19.010220 DEBUG] [ruby] Adding dependency on csv '~> 3.2.6'
+[13:38:19.010279 DEBUG] [ruby] Adding dependency on date '~> 3.3.3'
+[13:38:19.010339 DEBUG] [ruby] Adding dependency on delegate '~> 0.3.0'
+[13:38:19.010394 DEBUG] [ruby] Adding dependency on did_you_mean '~> 1.6.3'
+[13:38:19.010444 DEBUG] [ruby] Adding dependency on digest '~> 3.1.1'
+[13:38:19.010494 DEBUG] [ruby] Adding dependency on drb '~> 2.1.1'
+[13:38:19.010550 DEBUG] [ruby] Adding dependency on english '~> 0.7.2'
+[13:38:19.010597 DEBUG] [ruby] Adding dependency on erb '~> 4.0.2'
+[13:38:19.010644 DEBUG] [ruby] Adding dependency on error_highlight '~> 0.5.1'
+[13:38:19.010719 DEBUG] [ruby] Adding dependency on etc '~> 1.4.2'
+[13:38:19.010799 DEBUG] [ruby] Adding dependency on fcntl '~> 1.0.2'
+[13:38:19.010839 DEBUG] [ruby] Adding dependency on fiddle '~> 1.1.1'
+[13:38:19.010873 DEBUG] [ruby] Adding dependency on fileutils '~> 1.7.0'
+[13:38:19.010906 DEBUG] [ruby] Adding dependency on find '~> 0.1.1'
+[13:38:19.010939 DEBUG] [ruby] Adding dependency on forwardable '~> 1.3.3'
+[13:38:19.010969 DEBUG] [ruby] Adding dependency on getoptlong '~> 0.2.0'
+[13:38:19.011000 DEBUG] [ruby] Adding dependency on io-console '~> 0.6.0'
+[13:38:19.011029 DEBUG] [ruby] Adding dependency on io-nonblock '~> 0.2.0'
+[13:38:19.011058 DEBUG] [ruby] Adding dependency on io-wait '~> 0.3.0'
+[13:38:19.011088 DEBUG] [ruby] Adding dependency on ipaddr '~> 1.2.5'
+[13:38:19.011331 DEBUG] [ruby] Adding dependency on irb '~> 1.6.2'
+[13:38:19.011374 DEBUG] [ruby] Adding dependency on json '~> 2.6.3'
+[13:38:19.011408 DEBUG] [ruby] Adding dependency on logger '~> 1.5.3'
+[13:38:19.011443 DEBUG] [ruby] Adding dependency on mutex_m '~> 0.1.2'
+[13:38:19.011502 DEBUG] [ruby] Adding dependency on net-http '~> 0.3.2'
+[13:38:19.011546 DEBUG] [ruby] Adding dependency on net-protocol '~> 0.2.1'
+[13:38:19.011587 DEBUG] [ruby] Adding dependency on nkf '~> 0.1.2'
+[13:38:19.011627 DEBUG] [ruby] Adding dependency on observer '~> 0.1.1'
+[13:38:19.011664 DEBUG] [ruby] Adding dependency on open-uri '~> 0.3.0'
+[13:38:19.011702 DEBUG] [ruby] Adding dependency on open3 '~> 0.1.2'
+[13:38:19.011744 DEBUG] [ruby] Adding dependency on openssl '~> 3.1.0'
+[13:38:19.011780 DEBUG] [ruby] Adding dependency on optparse '~> 0.3.1'
+[13:38:19.011816 DEBUG] [ruby] Adding dependency on ostruct '~> 0.5.5'
+[13:38:19.011852 DEBUG] [ruby] Adding dependency on pathname '~> 0.2.1'
+[13:38:19.011891 DEBUG] [ruby] Adding dependency on pp '~> 0.4.0'
+[13:38:19.011942 DEBUG] [ruby] Adding dependency on prettyprint '~> 0.1.1'
+[13:38:19.011987 DEBUG] [ruby] Adding dependency on pstore '~> 0.1.2'
+[13:38:19.012031 DEBUG] [ruby] Adding dependency on psych '~> 5.0.1'
+[13:38:19.012078 DEBUG] [ruby] Adding dependency on racc '~> 1.6.2'
+[13:38:19.012117 DEBUG] [ruby] Adding dependency on rdoc '~> 6.5.0'
+[13:38:19.012158 DEBUG] [ruby] Adding dependency on readline '~> 0.0.3'
+[13:38:19.012200 DEBUG] [ruby] Adding dependency on readline-ext '~> 0.1.5'
+[13:38:19.012242 DEBUG] [ruby] Adding dependency on reline '~> 0.3.2'
+[13:38:19.012295 DEBUG] [ruby] Adding dependency on resolv '~> 0.2.2'
+[13:38:19.012342 DEBUG] [ruby] Adding dependency on resolv-replace '~> 0.1.1'
+[13:38:19.012385 DEBUG] [ruby] Adding dependency on rinda '~> 0.1.1'
+[13:38:19.012429 DEBUG] [ruby] Adding dependency on ruby2_keywords '~> 0.0.5'
+[13:38:19.012469 DEBUG] [ruby] Adding dependency on securerandom '~> 0.2.2'
+[13:38:19.012512 DEBUG] [ruby] Adding dependency on set '~> 1.0.3'
+[13:38:19.012546 DEBUG] [ruby] Adding dependency on shellwords '~> 0.1.0'
+[13:38:19.012576 DEBUG] [ruby] Adding dependency on singleton '~> 0.1.1'
+[13:38:19.012605 DEBUG] [ruby] Adding dependency on stringio '~> 3.0.4'
+[13:38:19.012657 DEBUG] [ruby] Adding dependency on strscan '~> 3.0.5'
+[13:38:19.012689 DEBUG] [ruby] Adding dependency on syntax_suggest '~> 1.0.2'
+[13:38:19.012719 DEBUG] [ruby] Adding dependency on syslog '~> 0.1.1'
+[13:38:19.012748 DEBUG] [ruby] Adding dependency on tempfile '~> 0.1.3'
+[13:38:19.012776 DEBUG] [ruby] Adding dependency on time '~> 0.2.2'
+[13:38:19.012812 DEBUG] [ruby] Adding dependency on timeout '~> 0.3.1'
+[13:38:19.012843 DEBUG] [ruby] Adding dependency on tmpdir '~> 0.1.3'
+[13:38:19.012965 DEBUG] [ruby] Adding dependency on tsort '~> 0.1.1'
+[13:38:19.013063 DEBUG] [ruby] Adding dependency on un '~> 0.2.1'
+[13:38:19.013121 DEBUG] [ruby] Adding dependency on uri '~> 0.12.1'
+[13:38:19.013168 DEBUG] [ruby] Adding dependency on weakref '~> 0.1.2'
+[13:38:19.013212 DEBUG] [ruby] Adding dependency on yaml '~> 0.2.1'
+[13:38:19.013256 DEBUG] [ruby] Adding dependency on zlib '~> 3.0.0'
+[13:38:19.013300 DEBUG] [ruby] Adding dependency on matrix '~> 0.4.3'
+[13:38:19.013342 DEBUG] [ruby] Adding dependency on minitest '~> 5.14.4'
+[13:38:19.013386 DEBUG] [ruby] Adding dependency on net-ftp '~> 0.2.0'
+[13:38:19.013433 DEBUG] [ruby] Adding dependency on net-imap '~> 0.3.4'
+[13:38:19.013475 DEBUG] [ruby] Adding dependency on net-pop '~> 0.1.2'
+[13:38:19.013517 DEBUG] [ruby] Adding dependency on net-smtp '~> 0.3.3'
+[13:38:19.013558 DEBUG] [ruby] Adding dependency on power_assert '~> 2.0.3'
+[13:38:19.013599 DEBUG] [ruby] Adding dependency on prime '~> 0.1.2'
+[13:38:19.013639 DEBUG] [ruby] Adding dependency on rake '~> 13.2.1'
+[13:38:19.013683 DEBUG] [ruby] Adding dependency on rbs '~> 2.8.2'
+[13:38:19.013741 DEBUG] [ruby] Adding dependency on rexml '~> 3.2.5'
+[13:38:19.013800 DEBUG] [ruby] Adding dependency on rss '~> 0.2.9'
+[13:38:19.013850 DEBUG] [ruby] Adding dependency on test-unit '~> 3.5.7'
+[13:38:19.013899 DEBUG] [ruby] Adding dependency on typeprof '~> 0.21.3'
+[13:38:19.013942 DEBUG] [ruby] Adding dependency on addressable '~> 2.8.1'
+[13:38:19.013985 DEBUG] [ruby] Adding dependency on ansi '~> 1.5.0'
+[13:38:19.014032 DEBUG] [ruby] Adding dependency on ast '~> 2.4.3'
+[13:38:19.014077 DEBUG] [ruby] Adding dependency on bcl '~> 0.9.1'
+[13:38:19.014118 DEBUG] [ruby] Adding dependency on builder '~> 3.2.4'
+[13:38:19.014161 DEBUG] [ruby] Adding dependency on byebug '~> 11.1.3'
+[13:38:19.014206 DEBUG] [ruby] Adding dependency on docile '~> 1.4.1'
+[13:38:19.014247 DEBUG] [ruby] Adding dependency on faraday '~> 1.10.4'
+[13:38:19.014295 DEBUG] [ruby] Adding dependency on faraday-em_http '~> 1.0.0'
+[13:38:19.014339 DEBUG] [ruby] Adding dependency on faraday-em_synchrony '~> 1.0.1'
+[13:38:19.014382 DEBUG] [ruby] Adding dependency on faraday-excon '~> 1.1.0'
+[13:38:19.014434 DEBUG] [ruby] Adding dependency on faraday-httpclient '~> 1.0.1'
+[13:38:19.014477 DEBUG] [ruby] Adding dependency on faraday-multipart '~> 1.2.0'
+[13:38:19.014518 DEBUG] [ruby] Adding dependency on faraday-net_http '~> 1.0.2'
+[13:38:19.014575 DEBUG] [ruby] Adding dependency on faraday-net_http_persistent '~> 1.2.0'
+[13:38:19.014616 DEBUG] [ruby] Adding dependency on faraday-patron '~> 1.0.0'
+[13:38:19.014656 DEBUG] [ruby] Adding dependency on faraday-rack '~> 1.0.0'
+[13:38:19.014698 DEBUG] [ruby] Adding dependency on faraday-retry '~> 1.0.3'
+[13:38:19.014739 DEBUG] [ruby] Adding dependency on git '~> 1.13.2'
+[13:38:19.014781 DEBUG] [ruby] Adding dependency on jaro_winkler '~> 1.5.6'
+[13:38:19.014823 DEBUG] [ruby] Adding dependency on json-schema '~> 4.3.1'
+[13:38:19.014863 DEBUG] [ruby] Adding dependency on macaddr '~> 1.7.2'
+[13:38:19.014906 DEBUG] [ruby] Adding dependency on minitar '~> 0.12.1'
+[13:38:19.014949 DEBUG] [ruby] Adding dependency on minitest-reporters '~> 1.4.3'
+[13:38:19.014987 DEBUG] [ruby] Adding dependency on msgpack '~> 1.7.2'
+[13:38:19.015018 DEBUG] [ruby] Adding dependency on multipart-post '~> 2.4.1'
+[13:38:19.015048 DEBUG] [ruby] Adding dependency on octokit '~> 4.18.0'
+[13:38:19.015078 DEBUG] [ruby] Adding dependency on oga '~> 3.2'
+[13:38:19.015107 DEBUG] [ruby] Adding dependency on openstudio-extension '~> 0.9.7'
+[13:38:19.015137 DEBUG] [ruby] Adding dependency on openstudio-standards '~> 0.8.5'
+[13:38:19.015188 DEBUG] [ruby] Adding dependency on openstudio-workflow '~> 2.5.0'
+[13:38:19.015221 DEBUG] [ruby] Adding dependency on openstudio_measure_tester '~> 0.5.2'
+[13:38:19.015250 DEBUG] [ruby] Adding dependency on oslg '~> 0.4.0'
+[13:38:19.015279 DEBUG] [ruby] Adding dependency on osut '~> 0.8.0'
+[13:38:19.015308 DEBUG] [ruby] Adding dependency on parallel '~> 1.19.2'
+[13:38:19.015338 DEBUG] [ruby] Adding dependency on parser '~> 3.2.2.2'
+[13:38:19.015378 DEBUG] [ruby] Adding dependency on public_suffix '~> 5.1.1'
+[13:38:19.015434 DEBUG] [ruby] Adding dependency on rainbow '~> 3.1.1'
+[13:38:19.015501 DEBUG] [ruby] Adding dependency on rchardet '~> 1.10.0'
+[13:38:19.015558 DEBUG] [ruby] Adding dependency on regexp_parser '~> 2.9.0'
+[13:38:19.015606 DEBUG] [ruby] Adding dependency on rubocop '~> 1.50.0'
+[13:38:19.015656 DEBUG] [ruby] Adding dependency on rubocop-ast '~> 1.30.0'
+[13:38:19.015712 DEBUG] [ruby] Adding dependency on rubocop-checkstyle_formatter '~> 0.6.0'
+[13:38:19.015761 DEBUG] [ruby] Adding dependency on rubocop-performance '~> 1.20.0'
+[13:38:19.015808 DEBUG] [ruby] Adding dependency on ruby-ll '~> 2.1.4'
+[13:38:19.015848 DEBUG] [ruby] Adding dependency on ruby-ole '~> 1.2.13.1'
+[13:38:19.015879 DEBUG] [ruby] Adding dependency on ruby-progressbar '~> 1.13.0'
+[13:38:19.015910 DEBUG] [ruby] Adding dependency on rubyzip '~> 2.3.2'
+[13:38:19.015952 DEBUG] [ruby] Adding dependency on sawyer '~> 0.8.2'
+[13:38:19.015983 DEBUG] [ruby] Adding dependency on simplecov '~> 0.22.0'
+[13:38:19.016012 DEBUG] [ruby] Adding dependency on simplecov-html '~> 0.13.2'
+[13:38:19.016040 DEBUG] [ruby] Adding dependency on simplecov_json_formatter '~> 0.1.4'
+[13:38:19.016069 DEBUG] [ruby] Adding dependency on spreadsheet '~> 1.2.9'
+[13:38:19.016097 DEBUG] [ruby] Adding dependency on sqlite3 '~> 1.7.2'
+[13:38:19.016126 DEBUG] [ruby] Adding dependency on systemu '~> 2.6.5'
+[13:38:19.016154 DEBUG] [ruby] Adding dependency on tbd '~> 3.5.0'
+[13:38:19.016183 DEBUG] [ruby] Adding dependency on topolys '~> 0.6.2'
+[13:38:19.016212 DEBUG] [ruby] Adding dependency on unicode-display_width '~> 2.6.0'
+[13:38:19.016240 DEBUG] [ruby] Adding dependency on uuid '~> 2.3.9'
+[13:38:19.016271 DEBUG] [ruby] Adding dependency on webrick '~> 1.8.2'
+[13:38:19.016435 DEBUG] [ruby] Adding dependency on yamler '~> 0.1.0'
+[13:38:19.016473 DEBUG] [ruby] Adding dependency on zliby '~> 0.0.5'
+[13:38:19.207542 DEBUG] [ruby] Processing 148 activation requests
+[13:38:19.225701 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/io-console-0.6.0.gemspec
+[13:38:19.225836 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/reline-0.3.2.gemspec
+[13:38:19.225935 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/irb-1.6.2.gemspec
+[13:38:19.225996 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/debug-1.7.1.gemspec
+[13:38:19.226200 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/abbrev-0.1.1.gemspec
+[13:38:19.226273 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/base64-0.1.1.gemspec
+[13:38:19.226314 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/benchmark-0.2.1.gemspec
+[13:38:19.226349 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/bigdecimal-3.1.3.gemspec
+[13:38:19.226393 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/bundler-2.4.10.gemspec
+[13:38:19.226439 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/cgi-0.3.6.gemspec
+[13:38:19.226471 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/csv-3.2.6.gemspec
+[13:38:19.226518 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/date-3.3.3.gemspec
+[13:38:19.226552 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/delegate-0.3.0.gemspec
+[13:38:19.226584 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/did_you_mean-1.6.3.gemspec
+[13:38:19.226615 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/digest-3.1.1.gemspec
+[13:38:19.226650 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/ruby2_keywords-0.0.5.gemspec
+[13:38:19.226701 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/drb-2.1.1.gemspec
+[13:38:19.226739 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/english-0.7.2.gemspec
+[13:38:19.226770 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/erb-4.0.2.gemspec
+[13:38:19.226815 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/error_highlight-0.5.1.gemspec
+[13:38:19.226850 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/etc-1.4.2.gemspec
+[13:38:19.226886 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/fcntl-1.0.2.gemspec
+[13:38:19.226937 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/fiddle-1.1.1.gemspec
+[13:38:19.226978 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/fileutils-1.7.0.gemspec
+[13:38:19.227024 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/find-0.1.1.gemspec
+[13:38:19.227058 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/forwardable-1.3.3.gemspec
+[13:38:19.227096 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/getoptlong-0.2.0.gemspec
+[13:38:19.227129 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/io-nonblock-0.2.0.gemspec
+[13:38:19.227158 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/io-wait-0.3.0.gemspec
+[13:38:19.227187 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/ipaddr-1.2.5.gemspec
+[13:38:19.227215 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/json-2.6.3.gemspec
+[13:38:19.227244 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/logger-1.5.3.gemspec
+[13:38:19.227279 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/mutex_m-0.1.2.gemspec
+[13:38:19.227313 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/uri-0.12.1.gemspec
+[13:38:19.227344 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/net-http-0.3.2.gemspec
+[13:38:19.227380 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/timeout-0.3.1.gemspec
+[13:38:19.227420 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/net-protocol-0.2.1.gemspec
+[13:38:19.227456 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/nkf-0.1.2.gemspec
+[13:38:19.227487 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/observer-0.1.1.gemspec
+[13:38:19.227517 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/time-0.2.2.gemspec
+[13:38:19.227552 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/stringio-3.0.4.gemspec
+[13:38:19.227582 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/open-uri-0.3.0.gemspec
+[13:38:19.227620 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/open3-0.1.2.gemspec
+[13:38:19.227651 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/openssl-3.1.0.gemspec
+[13:38:19.227681 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/optparse-0.3.1.gemspec
+[13:38:19.227710 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/ostruct-0.5.5.gemspec
+[13:38:19.227741 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/pathname-0.2.1.gemspec
+[13:38:19.227781 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/prettyprint-0.1.1.gemspec
+[13:38:19.227813 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/pp-0.4.0.gemspec
+[13:38:19.227851 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/pstore-0.1.2.gemspec
+[13:38:19.227888 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/psych-5.0.1.gemspec
+[13:38:19.227922 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/racc-1.6.2.gemspec
+[13:38:19.227953 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/rdoc-6.5.0.gemspec
+[13:38:19.227992 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/readline-0.0.3.gemspec
+[13:38:19.228029 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/readline-ext-0.1.5.gemspec
+[13:38:19.228060 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/resolv-0.2.2.gemspec
+[13:38:19.228108 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/resolv-replace-0.1.1.gemspec
+[13:38:19.228150 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/rinda-0.1.1.gemspec
+[13:38:19.228199 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/securerandom-0.2.2.gemspec
+[13:38:19.228238 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/set-1.0.3.gemspec
+[13:38:19.228277 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/shellwords-0.1.0.gemspec
+[13:38:19.228312 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/singleton-0.1.1.gemspec
+[13:38:19.228348 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/strscan-3.0.5.gemspec
+[13:38:19.228383 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/syntax_suggest-1.0.2.gemspec
+[13:38:19.228419 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/syslog-0.1.1.gemspec
+[13:38:19.228463 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/tempfile-0.1.3.gemspec
+[13:38:19.228499 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/tmpdir-0.1.3.gemspec
+[13:38:19.228540 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/tsort-0.1.1.gemspec
+[13:38:19.228575 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/un-0.2.1.gemspec
+[13:38:19.228610 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/weakref-0.1.2.gemspec
+[13:38:19.228649 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/yaml-0.2.1.gemspec
+[13:38:19.228685 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/zlib-3.0.0.gemspec
+[13:38:19.228731 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/matrix-0.4.3.gemspec
+[13:38:19.228973 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/minitest-5.14.4.gemspec
+[13:38:19.229081 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/net-ftp-0.2.0.gemspec
+[13:38:19.229170 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/net-imap-0.3.4.gemspec
+[13:38:19.229269 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/net-pop-0.1.2.gemspec
+[13:38:19.229356 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/net-smtp-0.3.3.gemspec
+[13:38:19.229442 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/power_assert-2.0.3.gemspec
+[13:38:19.229524 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/prime-0.1.2.gemspec
+[13:38:19.229613 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/rake-13.2.1.gemspec
+[13:38:19.229694 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/rbs-2.8.2.gemspec
+[13:38:19.229819 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/rexml-3.2.5.gemspec
+[13:38:19.229909 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/rss-0.2.9.gemspec
+[13:38:19.230001 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/test-unit-3.5.7.gemspec
+[13:38:19.230088 DEBUG] [ruby] Activating gem :/ruby/gems/3.2.0/specifications/typeprof-0.21.3.gemspec
+[13:38:19.230284 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/public_suffix-5.1.1.gemspec
+[13:38:19.230701 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/addressable-2.8.1.gemspec
+[13:38:19.230868 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/ansi-1.5.0.gemspec
+[13:38:19.230977 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/ast-2.4.3.gemspec
+[13:38:19.231083 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/zliby-0.0.5.gemspec
+[13:38:19.231172 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/yamler-0.1.0.gemspec
+[13:38:19.231239 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/systemu-2.6.5.gemspec
+[13:38:19.231304 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/macaddr-1.7.2.gemspec
+[13:38:19.231388 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/uuid-2.3.9.gemspec
+[13:38:19.231471 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/ruby-ole-1.2.13.1.gemspec
+[13:38:19.231543 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/spreadsheet-1.2.9.gemspec
+[13:38:19.231611 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/rubyzip-2.3.2.gemspec
+[13:38:19.231698 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/parser-3.2.2.2.gemspec
+[13:38:19.231780 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/builder-3.2.4.gemspec
+[13:38:19.231845 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/ruby-progressbar-1.13.0.gemspec
+[13:38:19.231911 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/minitest-reporters-1.4.3.gemspec
+[13:38:19.231995 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/rchardet-1.10.0.gemspec
+[13:38:19.232061 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/git-1.13.2.gemspec
+[13:38:19.232157 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/openstudio_measure_tester-0.5.2.gemspec
+[13:38:19.232271 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/minitar-0.12.1.gemspec
+[13:38:19.232341 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-retry-1.0.3.gemspec
+[13:38:19.232407 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-rack-1.0.0.gemspec
+[13:38:19.232479 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-patron-1.0.0.gemspec
+[13:38:19.232546 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-net_http_persistent-1.2.0.gemspec
+[13:38:19.232616 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-net_http-1.0.2.gemspec
+[13:38:19.232686 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/multipart-post-2.4.1.gemspec
+[13:38:19.232751 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-multipart-1.2.0.gemspec
+[13:38:19.232829 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-httpclient-1.0.1.gemspec
+[13:38:19.232899 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-excon-1.1.0.gemspec
+[13:38:19.232966 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-em_synchrony-1.0.1.gemspec
+[13:38:19.233105 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-em_http-1.0.0.gemspec
+[13:38:19.233189 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/faraday-1.10.4.gemspec
+[13:38:19.233353 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/bcl-0.9.1.gemspec
+[13:38:19.233484 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/byebug-11.1.3.gemspec
+[13:38:19.233579 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/docile-1.4.1.gemspec
+[13:38:19.233649 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/jaro_winkler-1.5.6.gemspec
+[13:38:19.233747 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/json-schema-4.3.1.gemspec
+[13:38:19.233828 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/msgpack-1.7.2.gemspec
+[13:38:19.233918 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/sawyer-0.8.2.gemspec
+[13:38:19.234006 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/octokit-4.18.0.gemspec
+[13:38:19.234095 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/ruby-ll-2.1.4.gemspec
+[13:38:19.234210 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/oga-3.2.gemspec
+[13:38:19.234320 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/regexp_parser-2.9.0.gemspec
+[13:38:19.234409 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/parallel-1.19.2.gemspec
+[13:38:19.234477 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/openstudio-workflow-2.5.0.gemspec
+[13:38:19.234548 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/openstudio-extension-0.9.7.gemspec
+[13:38:19.234676 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/oslg-0.4.0.gemspec
+[13:38:19.234747 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/osut-0.8.0.gemspec
+[13:38:19.234826 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/topolys-0.6.2.gemspec
+[13:38:19.234901 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/tbd-3.5.0.gemspec
+[13:38:19.234998 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/openstudio-standards-0.8.5.gemspec
+[13:38:19.235089 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/rainbow-3.1.1.gemspec
+[13:38:19.235183 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/unicode-display_width-2.6.0.gemspec
+[13:38:19.235254 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/rubocop-ast-1.30.0.gemspec
+[13:38:19.235335 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/rubocop-1.50.0.gemspec
+[13:38:19.235465 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/rubocop-checkstyle_formatter-0.6.0.gemspec
+[13:38:19.235556 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/rubocop-performance-1.20.0.gemspec
+[13:38:19.235644 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/simplecov_json_formatter-0.1.4.gemspec
+[13:38:19.235717 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/simplecov-html-0.13.2.gemspec
+[13:38:19.235786 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/simplecov-0.22.0.gemspec
+[13:38:19.235896 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/sqlite3-1.7.2-x86_64-darwin.gemspec
+[13:38:19.235982 DEBUG] [ruby] Activating gem :/ruby/3.2.0/specifications/webrick-1.8.2.gemspec
+[13:38:19.572609 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[13:38:19.572683 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 3 arguments
+[13:38:19.574712 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'key_value' to 'Bano'
+[13:38:19.574812 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[13:38:19.574867 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[13:38:19.574899 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "Bano", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[13:38:19.575985 INFO] [openstudio.measure.OSRunner] The model started with 2 output variable objects.
+[13:38:19.576172 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[13:38:19.576208 INFO] [openstudio.measure.OSRunner] Key value for variable is Bano.
+[13:38:19.576245 INFO] [openstudio.measure.OSRunner] The model finished with 3 output variable objects.
+[13:38:19.576818 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[13:38:19.576860 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.576887 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.577112 DEBUG] [openstudio.workflow.OSWorkflow] Running step 1
+[13:38:19.577236 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.577277 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.578177 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/001_AddOutputVariable'
+[13:38:19.596972 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb'
+[13:38:19.597057 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[13:38:19.597163 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb
+[13:38:19.597226 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[13:38:19.597269 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[13:38:19.598915 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[13:38:19.599030 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 3 arguments
+[13:38:19.600227 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'key_value' to 'Escalera'
+[13:38:19.600292 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[13:38:19.600331 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[13:38:19.600388 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "Escalera", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[13:38:19.600893 INFO] [openstudio.measure.OSRunner] The model started with 3 output variable objects.
+[13:38:19.601101 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[13:38:19.601139 INFO] [openstudio.measure.OSRunner] Key value for variable is Escalera.
+[13:38:19.601177 INFO] [openstudio.measure.OSRunner] The model finished with 4 output variable objects.
+[13:38:19.601695 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[13:38:19.601736 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.601765 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.602003 DEBUG] [openstudio.workflow.OSWorkflow] Running step 2
+[13:38:19.602064 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.602089 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.602726 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/002_AddOutputVariable'
+[13:38:19.607425 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb'
+[13:38:19.607525 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[13:38:19.607567 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb
+[13:38:19.607618 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[13:38:19.607657 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[13:38:19.609531 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[13:38:19.609620 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 3 arguments
+[13:38:19.611060 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'key_value' to 'Circulacion'
+[13:38:19.611148 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[13:38:19.611187 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[13:38:19.611230 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "Circulacion", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[13:38:19.612007 INFO] [openstudio.measure.OSRunner] The model started with 4 output variable objects.
+[13:38:19.612289 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[13:38:19.612338 INFO] [openstudio.measure.OSRunner] Key value for variable is Circulacion.
+[13:38:19.612392 INFO] [openstudio.measure.OSRunner] The model finished with 5 output variable objects.
+[13:38:19.612867 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[13:38:19.613064 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.613206 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.613603 DEBUG] [openstudio.workflow.OSWorkflow] Running step 3
+[13:38:19.613722 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.613777 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.614596 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/003_AddOutputVariable'
+[13:38:19.621328 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb'
+[13:38:19.621393 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[13:38:19.621427 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb
+[13:38:19.621453 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[13:38:19.621476 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[13:38:19.622744 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[13:38:19.622797 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 3 arguments
+[13:38:19.623920 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'key_value' to 'Sala'
+[13:38:19.623990 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[13:38:19.624021 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[13:38:19.624056 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "Sala", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[13:38:19.624753 INFO] [openstudio.measure.OSRunner] The model started with 5 output variable objects.
+[13:38:19.624955 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[13:38:19.625000 INFO] [openstudio.measure.OSRunner] Key value for variable is Sala.
+[13:38:19.625045 INFO] [openstudio.measure.OSRunner] The model finished with 6 output variable objects.
+[13:38:19.625395 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[13:38:19.625437 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.625467 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.625664 DEBUG] [openstudio.workflow.OSWorkflow] Running step 4
+[13:38:19.625750 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.625799 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.626922 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/004_AddOutputVariable'
+[13:38:19.647256 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb'
+[13:38:19.647343 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[13:38:19.647376 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb
+[13:38:19.647402 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[13:38:19.647425 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[13:38:19.649080 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[13:38:19.649236 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 3 arguments
+[13:38:19.650524 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'key_value' to 'RecamaraPA'
+[13:38:19.650634 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[13:38:19.650668 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[13:38:19.650704 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "RecamaraPA", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[13:38:19.651311 INFO] [openstudio.measure.OSRunner] The model started with 6 output variable objects.
+[13:38:19.651558 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[13:38:19.651608 INFO] [openstudio.measure.OSRunner] Key value for variable is RecamaraPA.
+[13:38:19.651662 INFO] [openstudio.measure.OSRunner] The model finished with 7 output variable objects.
+[13:38:19.652158 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[13:38:19.652218 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.652251 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.652710 DEBUG] [openstudio.workflow.OSWorkflow] Running step 5
+[13:38:19.652863 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.652922 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.653424 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/005_AddOutputVariable'
+[13:38:19.659074 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb'
+[13:38:19.659165 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[13:38:19.659216 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb
+[13:38:19.659259 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[13:38:19.659299 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[13:38:19.661580 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[13:38:19.661683 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 3 arguments
+[13:38:19.662950 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'key_value' to 'RecamaraPB'
+[13:38:19.663037 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[13:38:19.663081 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[13:38:19.663134 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "RecamaraPB", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[13:38:19.663988 INFO] [openstudio.measure.OSRunner] The model started with 7 output variable objects.
+[13:38:19.664316 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[13:38:19.664382 INFO] [openstudio.measure.OSRunner] Key value for variable is RecamaraPB.
+[13:38:19.664454 INFO] [openstudio.measure.OSRunner] The model finished with 8 output variable objects.
+[13:38:19.665006 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[13:38:19.665055 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.665088 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.665436 DEBUG] [openstudio.workflow.OSWorkflow] Running step 6
+[13:38:19.665575 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.665625 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.666427 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/006_AddOutputVariable'
+[13:38:19.696661 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb'
+[13:38:19.696734 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[13:38:19.696765 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb
+[13:38:19.696795 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[13:38:19.696821 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[13:38:19.698247 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[13:38:19.698320 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 3 arguments
+[13:38:19.699397 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'key_value' to 'Comercio'
+[13:38:19.699456 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[13:38:19.699487 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[13:38:19.699523 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "Comercio", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[13:38:19.700135 INFO] [openstudio.measure.OSRunner] The model started with 8 output variable objects.
+[13:38:19.700325 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[13:38:19.700369 INFO] [openstudio.measure.OSRunner] Key value for variable is Comercio.
+[13:38:19.700414 INFO] [openstudio.measure.OSRunner] The model finished with 9 output variable objects.
+[13:38:19.700932 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[13:38:19.700987 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.701022 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.701235 DEBUG] [openstudio.workflow.OSWorkflow] Running step 7
+[13:38:19.701302 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.701353 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.701879 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/007_AddOutputVariable'
+[13:38:19.705588 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb'
+[13:38:19.705646 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[13:38:19.705680 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/measures/AddOutputVariable/measure.rb
+[13:38:19.705708 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[13:38:19.705732 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[13:38:19.707176 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[13:38:19.707271 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 2 arguments
+[13:38:19.708791 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[13:38:19.708916 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Site Outdoor Air Drybulb Temperature'
+[13:38:19.708991 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "*", "reporting_frequency": "timestep", "variable_name": "Site Outdoor Air Drybulb Temperature"}
+[13:38:19.709827 INFO] [openstudio.measure.OSRunner] The model started with 9 output variable objects.
+[13:38:19.710138 INFO] [openstudio.measure.OSRunner] Adding output variable for Site Outdoor Air Drybulb Temperature reporting timestep.
+[13:38:19.710204 INFO] [openstudio.measure.OSRunner] Key value for variable is *.
+[13:38:19.710278 INFO] [openstudio.measure.OSRunner] The model finished with 10 output variable objects.
+[13:38:19.710953 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[13:38:19.711022 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[13:38:19.711072 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:38:19.711482 INFO] [openstudio.workflow.OSWorkflow] Finished applying OpenStudio Measures.
+[13:38:19.711579 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute Reporting Measures's Model Output Requests
+[13:38:19.711632 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[13:38:19.711680 INFO] [openstudio.workflow.OSWorkflow] Finished applying Reporting Measures's Model Output Requests.
+[13:38:19.729701 DEBUG] [openstudio.workflow.OSWorkflow] Translator - selected = true
+[13:38:19.731218 INFO] [openstudio.workflow.OSWorkflow] Beginning the translation to IDF
+[13:38:19.761162 WARN] [openstudio.energyplus.ForwardTranslator] OS_ProgramControl is not currently translated
+[13:38:19.769792 INFO] [openstudio.workflow.OSWorkflow] Successfully translated to IDF
+[13:38:19.769925 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlusMeasures - selected = true
+[13:38:19.769970 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute EnergyPlus Measures.
+[13:38:19.770002 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type EnergyPlusMeasure
+[13:38:19.770034 INFO] [openstudio.workflow.OSWorkflow] Finished applying EnergyPlus Measures.
+[13:38:19.770895 DEBUG] [openstudio.workflow.OSWorkflow] ModelicaMeasures - selected = false
+[13:38:19.770942 INFO] [openstudio.workflow.OSWorkflow] Skipping job ModelicaMeasures
+[13:38:19.770989 DEBUG] [openstudio.workflow.OSWorkflow] PreProcess - selected = true
+[13:38:19.780008 INFO] [openstudio.workflow.OSWorkflow] Beginning to collect EnergyPlus output requests from Reporting measures.
+[13:38:19.780098 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[13:38:19.780135 INFO] [openstudio.workflow.OSWorkflow] Finished collecting EnergyPlus output requests from Reporting measures.
+[13:38:19.780171 INFO] [openstudio.workflow.OSWorkflow] Running EnergyPlus Preprocess
+[13:38:19.781757 INFO] [openstudio.workflow.OSWorkflow] Finished preprocess job for EnergyPlus simulation
+[13:38:19.791541 DEBUG] [openstudio.workflow.OSWorkflow] Saved final IDF as /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/in.idf
+[13:38:19.791614 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlus - selected = true
+[13:38:19.792191 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Original Directory: /
+[13:38:19.792258 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing To run directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run
+[13:38:19.793188 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, info.dli_fname = '/Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib'
+[13:38:19.793334 DEBUG] [PathHelpers] completeAndNormalize: result = /Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib
+[13:38:19.793382 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found '/Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib'
+[13:38:19.793413 DEBUG] [ApplicationPathHelpers] Searching for EnergyPlus in '/Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus-25.2.0'
+[13:38:19.793470 DEBUG] [PathHelpers] completeAndNormalize: result = /Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus-25.2.0
+[13:38:19.793498 DEBUG] [ApplicationPathHelpers] Found EnergyPlus at '/Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus-25.2.0'
+[13:38:19.793560 DEBUG] [PathHelpers] completeAndNormalize: result = /Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus-25.2.0
+[13:38:19.826455 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] EnergyPlus executable path is /Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus
+[13:38:19.826583 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] ExpandObjects executable path is /Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/ExpandObjects
+[13:38:19.826624 INFO] [openstudio.workflow.OSWorkflow] Starting simulation in run directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run
+[13:38:19.836167 INFO] [openstudio.workflow.OSWorkflow] Running command '"/Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/ExpandObjects"'
+[13:38:19.871940 INFO] [openstudio.workflow.OSWorkflow] Running command '"/Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus" in.idf'
+[13:38:26.775663 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus returned '0'
+[13:38:26.796962 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus finished with 17 warnings and 0 severe errors
+[13:38:26.797182 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] Removing any copied EnergyPlus files
+[13:38:26.797722 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing Current Directory back to: /
+[13:38:26.798031 DEBUG] [openstudio.workflow.OSWorkflow] Modelica - selected = false
+[13:38:26.798068 INFO] [openstudio.workflow.OSWorkflow] Skipping job Modelica
+[13:38:26.798095 DEBUG] [openstudio.workflow.OSWorkflow] ReportingMeasures - selected = true
+[13:38:26.798817 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute Reporting Measures.
+[13:38:26.798959 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[13:38:26.799030 INFO] [openstudio.workflow.OSWorkflow] Finished applying Reporting Measures.
+[13:38:26.801661 DEBUG] [openstudio.workflow.OSWorkflow] PostProcess - selected = true
+[13:38:26.801757 INFO] [openstudio.workflow.OSWorkflow] Gathering reports
+[13:38:26.802213 INFO] [openstudio.workflow.Util] Run directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run
+[13:38:26.802392 INFO] [openstudio.workflow.Util] Reports directory/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources
+[13:38:26.802440 INFO] [openstudio.workflow.Util] Saving EnergyPlus HTML report to /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/reports/eplustbl.html
+[13:38:26.854870 INFO] [openstudio.workflow.Util] Removing empty directory /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/007_AddOutputVariable
+[13:38:26.855403 INFO] [openstudio.workflow.Util] Removing empty directory /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/002_AddOutputVariable
+[13:38:26.855961 INFO] [openstudio.workflow.Util] Removing empty directory /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/006_AddOutputVariable
+[13:38:26.856494 INFO] [openstudio.workflow.Util] Removing empty directory /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/003_AddOutputVariable
+[13:38:26.856977 INFO] [openstudio.workflow.Util] Removing empty directory /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/005_AddOutputVariable
+[13:38:26.857700 INFO] [openstudio.workflow.Util] Removing empty directory /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/000_AddOutputVariable
+[13:38:26.858272 INFO] [openstudio.workflow.Util] Removing empty directory /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/004_AddOutputVariable
+[13:38:26.859015 INFO] [openstudio.workflow.Util] Removing empty directory /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/001_AddOutputVariable
+[13:38:26.859354 INFO] [openstudio.workflow.OSWorkflow] Finished gathering reports
+[13:38:26.859434 DEBUG] [openstudio.workflow.OSWorkflow] Cleanup - selected = true
+[13:38:26.859752 INFO] [openstudio.workflow.OSWorkflow] Beginning cleanup of the run directory
+[13:38:26.861957 INFO] [openstudio.workflow.OSWorkflow] Finished cleanup of the run directory
