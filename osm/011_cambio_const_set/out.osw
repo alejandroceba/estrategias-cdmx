@@ -1,0 +1,23 @@
+{
+   "completed_at" : "20260602T190858Z",
+   "completed_status" : "Success",
+   "created_at" : "20260602T185000Z",
+   "current_step" : 0,
+   "eplusout_err" : "Program Version,EnergyPlus, Version 25.2.0-cf7368216c, YMD=2026.06.02 13:08,\n   ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.\n   **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.\n   ** Warning ** GetSurfaceData: There are 3 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.\n   **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;\n   ** Warning ** Output:Meter: invalid Key Name=\"ELECTRICITY:FACILITY\" - not found.\n   ** Warning ** Output:Meter: invalid Key Name=\"NATURALGAS:FACILITY\" - not found.\n   ** Warning ** Output:Meter: invalid Key Name=\"DISTRICTHEATINGWATER:FACILITY\" - not found.\n   ** Warning ** Output:Meter: invalid Key Name=\"DISTRICTCOOLING:FACILITY\" - not found.\n   ** Warning ** Output:Meter:MeterFileOnly: invalid Key Name=\"NATURALGAS:FACILITY\" - not found.\n   ** Warning ** Output:Meter:MeterFileOnly: invalid Key Name=\"ELECTRICITY:FACILITY\" - not found.\n   ** Warning ** Output:Meter:MeterFileOnly: invalid Key Name=\"ELECTRICITY:FACILITY\" - not found.\n   ************* Testing Individual Branch Integrity\n   ************* All Branches passed integrity testing\n   ************* Testing Individual Supply Air Path Integrity\n   ************* All Supply Air Paths passed integrity testing\n   ************* Testing Individual Return Air Path Integrity\n   ************* All Return Air Paths passed integrity testing\n   ************* No node connection errors were found.\n   ************* Beginning Simulation\n   ** Warning ** Processing Monthly Tabular Reports: Variable names not valid for this simulation\n   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual variables.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-ELECTRICITY\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-DISTILLATE OIL\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-RESIDUAL OIL\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-NATURAL GAS\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-COAL\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ************* Simulation Error Summary *************\n   ************* There are 3 unused schedules in input.\n   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.\n   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.\n   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.\n   ************* EnergyPlus Completed Successfully-- 17 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  4.08sec\n",
+   "file_paths" : 
+   [
+      "/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/generated_files",
+      "./files",
+      "./weather",
+      "../../files",
+      "../../weather",
+      "./"
+   ],
+   "hash" : "A26F28D8",
+   "run_options" : null,
+   "seed_file" : "../011_cambio_const_set.osm",
+   "started_at" : "20260602T190853Z",
+   "steps" : [],
+   "updated_at" : "20260602T190858Z",
+   "weather_file" : "MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw"
+}

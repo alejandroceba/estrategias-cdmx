@@ -1,0 +1,80 @@
+[13:08:53.530675 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing run directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run
+[13:08:53.532146 DEBUG] [openstudio.workflow.OSWorkflow] Registering that the workflow has started with the adapter
+[13:08:53.532959 DEBUG] [openstudio.workflow.OSWorkflow] Initialization - selected = true
+[13:08:53.533607 DEBUG] [openstudio.workflow.OSWorkflow] The root_dir for the datapoint is /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources
+[13:08:53.533741 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing generated files directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/generated_files
+[13:08:53.534382 DEBUG] [openstudio.workflow.OSWorkflow] Creating generated files directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/generated_files
+[13:08:53.534841 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing reports directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/reports
+[13:08:53.540347 INFO] [openstudio.workflow.OSWorkflow] Attempting to validate the measure workflow
+[13:08:53.540458 INFO] [openstudio.workflow.OSWorkflow] Validated the measure workflow
+[13:08:53.540506 DEBUG] [openstudio.workflow.OSWorkflow] Finding and loading the seed file
+[13:08:53.548956 INFO] [openstudio.worklow.Util] Loading OSM model
+[13:08:53.549232 INFO] [openstudio.worklow.Util] Reading in OSM model /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/011_cambio_const_set.osm
+[13:08:53.570784 DEBUG] [openstudio.osversion.VersionTranslator] Starting translation from Version 3.11.0.
+[13:08:53.600806 DEBUG] [openstudio.osversion.VersionTranslator] Initial model has 205 objects.
+[13:08:53.601006 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 205 objects in IDF form.
+[13:08:53.619633 DEBUG] [utilities.idf.Workspace] Workspace::isValid called.
+[13:08:53.638288 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 205 objects in Model form.
+[13:08:53.639733 DEBUG] [openstudio.workflow.OSWorkflow] Initialize the weather file from osw
+[13:08:53.639844 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file defined by osw MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw
+[13:08:53.650785 INFO] [openstudio.EpwFile] Found 3 ground temperature depths in the EPW file '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw'
+[13:08:53.660940 DEBUG] [openstudio.EpwFile] No Daylightings Saving start Date
+[13:08:53.663834 INFO] [openstudio.EpwFile] Successive data points (2022-Jan-31 to 2011-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw'. Data will be treated as typical (TMY)
+[13:08:53.703445 DEBUG] [openstudio.workflow.OSWorkflow] OpenStudioMeasures - selected = true
+[13:08:53.703578 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute OpenStudio Measures
+[13:08:53.703650 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ModelMeasure
+[13:08:53.703757 INFO] [openstudio.workflow.OSWorkflow] Finished applying OpenStudio Measures.
+[13:08:53.703857 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute Reporting Measures's Model Output Requests
+[13:08:53.703977 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[13:08:53.704085 INFO] [openstudio.workflow.OSWorkflow] Finished applying Reporting Measures's Model Output Requests.
+[13:08:53.733168 DEBUG] [openstudio.workflow.OSWorkflow] Translator - selected = true
+[13:08:53.742864 INFO] [openstudio.workflow.OSWorkflow] Beginning the translation to IDF
+[13:08:53.787573 WARN] [openstudio.energyplus.ForwardTranslator] OS_ProgramControl is not currently translated
+[13:08:53.793191 INFO] [openstudio.workflow.OSWorkflow] Successfully translated to IDF
+[13:08:53.793318 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlusMeasures - selected = true
+[13:08:53.793357 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute EnergyPlus Measures.
+[13:08:53.793383 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type EnergyPlusMeasure
+[13:08:53.793408 INFO] [openstudio.workflow.OSWorkflow] Finished applying EnergyPlus Measures.
+[13:08:53.794162 DEBUG] [openstudio.workflow.OSWorkflow] ModelicaMeasures - selected = false
+[13:08:53.794209 INFO] [openstudio.workflow.OSWorkflow] Skipping job ModelicaMeasures
+[13:08:53.794234 DEBUG] [openstudio.workflow.OSWorkflow] PreProcess - selected = true
+[13:08:53.801426 INFO] [openstudio.workflow.OSWorkflow] Beginning to collect EnergyPlus output requests from Reporting measures.
+[13:08:53.801486 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[13:08:53.801517 INFO] [openstudio.workflow.OSWorkflow] Finished collecting EnergyPlus output requests from Reporting measures.
+[13:08:53.801542 INFO] [openstudio.workflow.OSWorkflow] Running EnergyPlus Preprocess
+[13:08:53.802903 INFO] [openstudio.workflow.OSWorkflow] Finished preprocess job for EnergyPlus simulation
+[13:08:53.817241 DEBUG] [openstudio.workflow.OSWorkflow] Saved final IDF as /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run/in.idf
+[13:08:53.817480 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlus - selected = true
+[13:08:53.818575 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Original Directory: /
+[13:08:53.818652 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing To run directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run
+[13:08:53.820898 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, info.dli_fname = '/Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib'
+[13:08:53.821079 DEBUG] [PathHelpers] completeAndNormalize: result = /Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib
+[13:08:53.821120 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found '/Applications/OpenStudioApplication-1.11.0-rc2/lib/libopenstudiolib.dylib'
+[13:08:53.821148 DEBUG] [ApplicationPathHelpers] Searching for EnergyPlus in '/Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus-25.2.0'
+[13:08:53.821195 DEBUG] [PathHelpers] completeAndNormalize: result = /Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus-25.2.0
+[13:08:53.821218 DEBUG] [ApplicationPathHelpers] Found EnergyPlus at '/Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus-25.2.0'
+[13:08:53.821251 DEBUG] [PathHelpers] completeAndNormalize: result = /Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus-25.2.0
+[13:08:53.854434 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] EnergyPlus executable path is /Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus
+[13:08:53.854498 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] ExpandObjects executable path is /Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/ExpandObjects
+[13:08:53.854525 INFO] [openstudio.workflow.OSWorkflow] Starting simulation in run directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run
+[13:08:53.862972 INFO] [openstudio.workflow.OSWorkflow] Running command '"/Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/ExpandObjects"'
+[13:08:53.896293 INFO] [openstudio.workflow.OSWorkflow] Running command '"/Applications/OpenStudioApplication-1.11.0-rc2/EnergyPlus/energyplus" in.idf'
+[13:08:58.436822 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus returned '0'
+[13:08:58.437826 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus finished with 17 warnings and 0 severe errors
+[13:08:58.438016 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] Removing any copied EnergyPlus files
+[13:08:58.439263 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing Current Directory back to: /
+[13:08:58.439807 DEBUG] [openstudio.workflow.OSWorkflow] Modelica - selected = false
+[13:08:58.439847 INFO] [openstudio.workflow.OSWorkflow] Skipping job Modelica
+[13:08:58.439872 DEBUG] [openstudio.workflow.OSWorkflow] ReportingMeasures - selected = true
+[13:08:58.440345 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute Reporting Measures.
+[13:08:58.440377 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[13:08:58.440399 INFO] [openstudio.workflow.OSWorkflow] Finished applying Reporting Measures.
+[13:08:58.441857 DEBUG] [openstudio.workflow.OSWorkflow] PostProcess - selected = true
+[13:08:58.441921 INFO] [openstudio.workflow.OSWorkflow] Gathering reports
+[13:08:58.442413 INFO] [openstudio.workflow.Util] Run directory: /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/run
+[13:08:58.442536 INFO] [openstudio.workflow.Util] Reports directory/private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources
+[13:08:58.442574 INFO] [openstudio.workflow.Util] Saving EnergyPlus HTML report to /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-1fb2-9cfc-89c1-1662-1780427100-0/resources/reports/eplustbl.html
+[13:08:58.482929 INFO] [openstudio.workflow.OSWorkflow] Finished gathering reports
+[13:08:58.483045 DEBUG] [openstudio.workflow.OSWorkflow] Cleanup - selected = true
+[13:08:58.483088 INFO] [openstudio.workflow.OSWorkflow] Beginning cleanup of the run directory
+[13:08:58.484040 INFO] [openstudio.workflow.OSWorkflow] Finished cleanup of the run directory
