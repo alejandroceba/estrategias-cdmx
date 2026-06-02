@@ -444,6 +444,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "enerhabitat" },
+    { name = "iertools" },
     { name = "ipykernel" },
     { name = "jupyter" },
     { name = "matplotlib" },
@@ -455,6 +456,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "enerhabitat", specifier = ">=0.1.9" },
+    { name = "iertools", git = "https://github.com/AltamarMx/iertools.git" },
     { name = "ipykernel", specifier = ">=7.2.0" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.10.9" },
@@ -618,6 +620,16 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/b9/28/99c51f664567218d824af024c0251650fb27e4ca066df188dab0769c5b91/idna-3.17.tar.gz", hash = "sha256:5eb0cb53bc467c12eadcf6de83163ad8527cec9416f44b9b61b19caedad2b87f", size = 196048, upload-time = "2026-05-28T14:32:38.55Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/de/a7/f76514cc40ad6234098ecdebda08732d75964776c51a42845b7da10649e2/idna-3.17-py3-none-any.whl", hash = "sha256:466e48829084efe2548012b855df21540b96f2e20e51bd124c851536556a592c", size = 65316, upload-time = "2026-05-28T14:32:37.035Z" },
+]
+
+[[package]]
+name = "iertools"
+version = "0.8.4"
+source = { git = "https://github.com/AltamarMx/iertools.git#2d1382998998a47e22483ef1b0682918b8df0301" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "requests" },
 ]
 
 [[package]]
