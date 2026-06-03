@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 25.2.0-cf7368216c, YMD=2026.06.03 11:43,
+Program Version,EnergyPlus, Version 25.2.0-cf7368216c, YMD=2026.06.03 06:07,
    ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.
    **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.
    ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
@@ -40,4 +40,4 @@ Program Version,EnergyPlus, Version 25.2.0-cf7368216c, YMD=2026.06.03 11:43,
    ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 18 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  4.44sec
+   ************* EnergyPlus Completed Successfully-- 18 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  4.18sec

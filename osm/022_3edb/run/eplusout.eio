@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 25.2.0-cf7368216c, YMD=2026.06.03 11:43
+Program Version,EnergyPlus, Version 25.2.0-cf7368216c, YMD=2026.06.03 06:07
 ! <Version>, Version ID
  Version, 25.2
 ! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
@@ -80,13 +80,13 @@ Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.
  Zone Internal Gains Nominal, RECAMARAPB,11.44,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
  Zone Internal Gains Nominal, SALA,14.96,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
 ! <ZoneInfiltration Airflow Stats Nominal>,Name,Input Object, Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/Exterior Surface Area {m3/s-m2},ACH - Air Changes per Hour,Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2}
- ZoneInfiltration Airflow Stats Nominal, S:SALA 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,SALA,14.96,0.0,6.441E-002,4.306E-003,1.140E-003,5.000,1.000,0.000,0.000,0.000
  ZoneInfiltration Airflow Stats Nominal, S:RECAMARAPB 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,RECAMARAPB,11.44,0.0,4.926E-002,4.306E-003,1.347E-003,5.000,1.000,0.000,0.000,0.000
- ZoneInfiltration Airflow Stats Nominal, S:CIRCULACION 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,CIRCULACION,3.80,0.0,1.636E-002,4.306E-003,9.100E-004,5.000,1.000,0.000,0.000,0.000
  ZoneInfiltration Airflow Stats Nominal, S:ESCALERA 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,ESCALERA,5.94,0.0,5.115E-002,8.611E-003,1.484E-003,5.000,1.000,0.000,0.000,0.000
  ZoneInfiltration Airflow Stats Nominal, S:COMERCIO 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,COMERCIO,11.16,0.0,4.805E-002,4.306E-003,2.039E-003,5.000,1.000,0.000,0.000,0.000
  ZoneInfiltration Airflow Stats Nominal, S:RECAMARAPA 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,RECAMARAPA,15.18,0.0,6.536E-002,4.306E-003,1.049E-003,5.000,1.000,0.000,0.000,0.000
  ZoneInfiltration Airflow Stats Nominal, S:BANO 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,BANO,3.74,0.0,1.610E-002,4.306E-003,1.528E-003,5.000,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, S:SALA 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,SALA,14.96,0.0,6.441E-002,4.306E-003,1.140E-003,5.000,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, S:CIRCULACION 5CAH,ZoneInfiltration:DesignFlowRate,VENTILACION_DIURNA,CIRCULACION,3.80,0.0,1.636E-002,4.306E-003,9.100E-004,5.000,1.000,0.000,0.000,0.000
 ! <AirFlow Model>, Simple
  AirFlow Model, Simple
 ! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
@@ -111,13 +111,13 @@ Environment:WarmupDays,  4
 ! <Tabular Report>,Style,Unit Conversion, Format Reals
 Tabular Report,HTML,None,Yes
 ! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
- Warmup Convergence Information,BANO,RunPeriod: RUN PERIOD 1,6.5407133218E-002,5.2727584450E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,CIRCULACION,RunPeriod: RUN PERIOD 1,9.9081152366E-002,5.4706743427E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,COMERCIO,RunPeriod: RUN PERIOD 1,0.1229457739,0.1092351397,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,ESCALERA,RunPeriod: RUN PERIOD 1,8.8669391532E-002,5.4959817582E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,RECAMARAPA,RunPeriod: RUN PERIOD 1,0.1239237120,6.2040008815E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,RECAMARAPB,RunPeriod: RUN PERIOD 1,8.3776274164E-002,5.8341993557E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
- Warmup Convergence Information,SALA,RunPeriod: RUN PERIOD 1,0.1401867683,7.3899052846E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,BANO,RunPeriod: RUN PERIOD 1,5.0566893007E-002,6.3944244886E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,CIRCULACION,RunPeriod: RUN PERIOD 1,6.2466995343E-002,6.2892299287E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,COMERCIO,RunPeriod: RUN PERIOD 1,0.1035872846,0.1226582275,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,ESCALERA,RunPeriod: RUN PERIOD 1,7.3920059221E-002,5.8378318412E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,RECAMARAPA,RunPeriod: RUN PERIOD 1,9.4193296093E-002,5.7818255448E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,RECAMARAPB,RunPeriod: RUN PERIOD 1,5.9708721721E-002,6.9762229894E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,SALA,RunPeriod: RUN PERIOD 1,0.1055143600,6.7464861504E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 ! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
 Program Control Information:Threads/Parallel Sims, No,1, N/A, N/A, N/A, N/A, N/A, N/A
 End of Data

@@ -235,13 +235,13 @@ Space,
 
 SpaceList,
   5cah,                                   !- Name
-  S:Sala,                                 !- Space Name 1
-  S:RecamaraPB,                           !- Space Name 2
-  S:Circulacion,                          !- Space Name 3
-  S:Escalera,                             !- Space Name 4
-  S:Comercio,                             !- Space Name 5
-  S:RecamaraPA,                           !- Space Name 6
-  S:Bano;                                 !- Space Name 7
+  S:RecamaraPB,                           !- Space Name 1
+  S:Escalera,                             !- Space Name 2
+  S:Comercio,                             !- Space Name 3
+  S:RecamaraPA,                           !- Space Name 4
+  S:Bano,                                 !- Space Name 5
+  S:Sala,                                 !- Space Name 6
+  S:Circulacion;                          !- Space Name 7
 
 ZoneInfiltration:DesignFlowRate,
   5cah,                                   !- Name
@@ -1511,9 +1511,9 @@ GlobalGeometryRules,
   Relative;                               !- Rectangular Surface Coordinate System
 
 Material,
-  abobe,                                  !- Name
+  abobe14cma0p7,                          !- Name
   Smooth,                                 !- Roughness
-  0.1,                                    !- Thickness {m}
+  0.14,                                   !- Thickness {m}
   0.58,                                   !- Conductivity {W/m-K}
   1500,                                   !- Density {kg/m3}
   1480,                                   !- Specific Heat {J/kg-K}
@@ -1608,13 +1608,13 @@ WindowMaterial:Glazing,
 Construction,
   muroExterior,                           !- Name
   mortero2cm0p7,                          !- Layer 1
-  abobe,                                  !- Layer 2
+  abobe14cma0p7,                          !- Layer 2
   yeso0p5cma0p3;                          !- Layer 3
 
 Construction,
   muroInterior,                           !- Name
   yeso0p5cma0p3,                          !- Layer 1
-  abobe,                                  !- Layer 2
+  abobe14cma0p7,                          !- Layer 2
   yeso0p5cma0p3;                          !- Layer 3
 
 Construction,
@@ -1806,11 +1806,11 @@ Schedule:Day:Interval,
   Fractional,                             !- Schedule Type Limits Name
   No,                                     !- Interpolate to Timestep
   10:00,                                  !- Time 1 {hh:mm}
-  0.10121128196649,                       !- Value Until Time 1
+  0.1,                                    !- Value Until Time 1
   18:00,                                  !- Time 2 {hh:mm}
   1,                                      !- Value Until Time 2
   24:00,                                  !- Time 3 {hh:mm}
-  0.107163525132275;                      !- Value Until Time 3
+  0.1;                                    !- Value Until Time 3
 
 Schedule:Week:Daily,
   ventilacion_diurna Week Rule - Jan1-Dec31, !- Name

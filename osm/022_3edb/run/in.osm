@@ -873,7 +873,7 @@ OS:WeatherFile,
   -99.183,                                !- Longitude {deg}
   -6,                                     !- Time Zone {hr}
   2303,                                   !- Elevation {m}
-  /private/var/folders/s1/xvs0fw2x2b7628h4xmyzms780000gn/T/osmodel-0f55-268a-4263-a216-1780507879-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw, !- Url
+  /tmp/osmodel-e4c7-71c3-8a80-4297-1780488246-0/resources/files/MEX_CMX_Cuidad.Mexico.Central.766800_TMYx.2011-2025.epw, !- Url
   965F3372,                               !- Checksum
   ,                                       !- Start Date Actual Year
   Sunday;                                 !- Start Day of Week
@@ -2668,19 +2668,19 @@ OS:Schedule:Day,
   ,                                       !- Interpolate to Timestep
   10,                                     !- Hour 1
   0,                                      !- Minute 1
-  0.10121128196649,                       !- Value Until Time 1
+  0.1,                                    !- Value Until Time 1
   18,                                     !- Hour 2
   0,                                      !- Minute 2
   1,                                      !- Value Until Time 2
   24,                                     !- Hour 3
   0,                                      !- Minute 3
-  0.107163525132275;                      !- Value Until Time 3
+  0.1;                                    !- Value Until Time 3
 
 OS:Material,
   {f3630486-87e6-43a0-8faa-9729b8b2bec7}, !- Handle
-  abobe,                                  !- Name
+  abobe14cma0p7,                          !- Name
   Smooth,                                 !- Roughness
-  0.1,                                    !- Thickness {m}
+  0.14,                                   !- Thickness {m}
   0.58,                                   !- Conductivity {W/m-K}
   1500,                                   !- Density {kg/m3}
   1480;                                   !- Specific Heat {J/kg-K}
@@ -2697,56 +2697,56 @@ OS:Output:Variable,
   Hourly;                                 !- Reporting Frequency
 
 OS:Output:Variable,
-  {d2367b45-016d-4cfa-8abe-7bbaef1b60d1}, !- Handle
+  {87615a9a-394f-4f21-a310-3778cedb546a}, !- Handle
   Output Variable 3,                      !- Name
   Bano,                                   !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {e94b4384-1967-4482-b20a-c4886029ca39}, !- Handle
+  {b282893e-1c63-4377-bd15-30f242379e0c}, !- Handle
   Output Variable 4,                      !- Name
   Escalera,                               !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {202a833b-97fc-4650-8ec3-8e71868d922c}, !- Handle
+  {ba0419a8-9f6a-44b6-b6b1-a4708ba89209}, !- Handle
   Output Variable 5,                      !- Name
   Circulacion,                            !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {43efff97-4486-4798-8c87-47e0cb399099}, !- Handle
+  {62d9e477-4e1d-422b-ac9f-09c88e2c353b}, !- Handle
   Output Variable 6,                      !- Name
   Comercio,                               !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {27e1f807-16c6-4510-9a9d-8fe80c04ec1d}, !- Handle
+  {7755e655-17f2-4c9f-80fb-8cc0b45e03c1}, !- Handle
   Output Variable 7,                      !- Name
   Sala,                                   !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {73da9d2c-8bdc-4017-8f50-6419e47eec5b}, !- Handle
+  {4736b638-f199-48ca-bf2f-4bf6b1f998df}, !- Handle
   Output Variable 8,                      !- Name
   RecamaraPB,                             !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {eba1c715-babc-45f1-a565-5e6da472fedc}, !- Handle
+  {310181a1-6960-47d8-8689-18e1541ee0ef}, !- Handle
   Output Variable 9,                      !- Name
   RecamaraPA,                             !- Key Value
   Zone Mean Air Temperature,              !- Variable Name
   timestep;                               !- Reporting Frequency
 
 OS:Output:Variable,
-  {ddae8b2c-3213-4d9c-afa8-31b40562a41d}, !- Handle
+  {ecfbb744-b9f4-4760-84ff-f0cb1c695dbc}, !- Handle
   Output Variable 10,                     !- Name
   *,                                      !- Key Value
   Site Outdoor Air Drybulb Temperature,   !- Variable Name

@@ -307,8 +307,8 @@
     "water_use_section" : true,
     "zone_condition_section" : true,
     "zone_equipment_detail_section" : true,
-    "zone_max_hours_over_55_rh" : 3670.0,
-    "zone_max_hours_over_70_rh" : 1220.0,
+    "zone_max_hours_over_55_rh" : 3579.0,
+    "zone_max_hours_over_70_rh" : 1021.0,
     "zone_summary_section" : true
   },
   "Site Outdoor Air Dyrbulb Temperature" : 
