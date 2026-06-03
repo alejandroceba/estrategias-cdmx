@@ -1,0 +1,328 @@
+
+ Meters for 19,BANO:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:BANO [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:BANO [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+  OnMeter=General:Heating:EnergyTransfer:Zone:BANO [J]
+
+ Meters for 104,BANO:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:BANO [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:BANO [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+  OnMeter=General:Cooling:EnergyTransfer:Zone:BANO [J]
+
+ Meters for 155,CIRCULACION:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:CIRCULACION [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:CIRCULACION [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+  OnMeter=General:Heating:EnergyTransfer:Zone:CIRCULACION [J]
+
+ Meters for 192,CIRCULACION:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:CIRCULACION [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:CIRCULACION [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+  OnMeter=General:Cooling:EnergyTransfer:Zone:CIRCULACION [J]
+
+ Meters for 219,COMERCIO:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:COMERCIO [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:COMERCIO [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+  OnMeter=General:Heating:EnergyTransfer:Zone:COMERCIO [J]
+
+ Meters for 256,COMERCIO:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:COMERCIO [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:COMERCIO [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+  OnMeter=General:Cooling:EnergyTransfer:Zone:COMERCIO [J]
+
+ Meters for 283,ESCALERA:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ESCALERA [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ESCALERA [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+  OnMeter=General:Heating:EnergyTransfer:Zone:ESCALERA [J]
+
+ Meters for 320,ESCALERA:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ESCALERA [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ESCALERA [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+  OnMeter=General:Cooling:EnergyTransfer:Zone:ESCALERA [J]
+
+ Meters for 347,RECAMARAPA:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:RECAMARAPA [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:RECAMARAPA [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+  OnMeter=General:Heating:EnergyTransfer:Zone:RECAMARAPA [J]
+
+ Meters for 384,RECAMARAPA:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:RECAMARAPA [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:RECAMARAPA [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+  OnMeter=General:Cooling:EnergyTransfer:Zone:RECAMARAPA [J]
+
+ Meters for 411,RECAMARAPB:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:RECAMARAPB [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:RECAMARAPB [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+  OnMeter=General:Heating:EnergyTransfer:Zone:RECAMARAPB [J]
+
+ Meters for 448,RECAMARAPB:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:RECAMARAPB [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:RECAMARAPB [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+  OnMeter=General:Cooling:EnergyTransfer:Zone:RECAMARAPB [J]
+
+ Meters for 475,SALA:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:SALA [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:SALA [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+  OnMeter=General:Heating:EnergyTransfer:Zone:SALA [J]
+
+ Meters for 512,SALA:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:SALA [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:SALA [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+  OnMeter=General:Cooling:EnergyTransfer:Zone:SALA [J]
+
+ Meters for 537,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 562,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 563,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
+  BANO:Zone Air System Sensible Heating Energy
+  BANO:Zone Air System Sensible Cooling Energy
+  CIRCULACION:Zone Air System Sensible Heating Energy
+  CIRCULACION:Zone Air System Sensible Cooling Energy
+  COMERCIO:Zone Air System Sensible Heating Energy
+  COMERCIO:Zone Air System Sensible Cooling Energy
+  ESCALERA:Zone Air System Sensible Heating Energy
+  ESCALERA:Zone Air System Sensible Cooling Energy
+  RECAMARAPA:Zone Air System Sensible Heating Energy
+  RECAMARAPA:Zone Air System Sensible Cooling Energy
+  RECAMARAPB:Zone Air System Sensible Heating Energy
+  RECAMARAPB:Zone Air System Sensible Cooling Energy
+  SALA:Zone Air System Sensible Heating Energy
+  SALA:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
+  BANO:Zone Air System Sensible Heating Energy
+  BANO:Zone Air System Sensible Cooling Energy
+  CIRCULACION:Zone Air System Sensible Heating Energy
+  CIRCULACION:Zone Air System Sensible Cooling Energy
+  COMERCIO:Zone Air System Sensible Heating Energy
+  COMERCIO:Zone Air System Sensible Cooling Energy
+  ESCALERA:Zone Air System Sensible Heating Energy
+  ESCALERA:Zone Air System Sensible Cooling Energy
+  RECAMARAPA:Zone Air System Sensible Heating Energy
+  RECAMARAPA:Zone Air System Sensible Cooling Energy
+  RECAMARAPB:Zone Air System Sensible Heating Energy
+  RECAMARAPB:Zone Air System Sensible Cooling Energy
+  SALA:Zone Air System Sensible Heating Energy
+  SALA:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:BANO [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  BANO:Zone Air System Sensible Heating Energy
+  BANO:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  BANO:Zone Air System Sensible Heating Energy
+  CIRCULACION:Zone Air System Sensible Heating Energy
+  COMERCIO:Zone Air System Sensible Heating Energy
+  ESCALERA:Zone Air System Sensible Heating Energy
+  RECAMARAPA:Zone Air System Sensible Heating Energy
+  RECAMARAPB:Zone Air System Sensible Heating Energy
+  SALA:Zone Air System Sensible Heating Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:BANO [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  BANO:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  BANO:Zone Air System Sensible Heating Energy
+  CIRCULACION:Zone Air System Sensible Heating Energy
+  COMERCIO:Zone Air System Sensible Heating Energy
+  ESCALERA:Zone Air System Sensible Heating Energy
+  RECAMARAPA:Zone Air System Sensible Heating Energy
+  RECAMARAPB:Zone Air System Sensible Heating Energy
+  SALA:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer:Zone:BANO [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  BANO:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  BANO:Zone Air System Sensible Cooling Energy
+  CIRCULACION:Zone Air System Sensible Cooling Energy
+  COMERCIO:Zone Air System Sensible Cooling Energy
+  ESCALERA:Zone Air System Sensible Cooling Energy
+  RECAMARAPA:Zone Air System Sensible Cooling Energy
+  RECAMARAPB:Zone Air System Sensible Cooling Energy
+  SALA:Zone Air System Sensible Cooling Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:BANO [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  BANO:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  BANO:Zone Air System Sensible Cooling Energy
+  CIRCULACION:Zone Air System Sensible Cooling Energy
+  COMERCIO:Zone Air System Sensible Cooling Energy
+  ESCALERA:Zone Air System Sensible Cooling Energy
+  RECAMARAPA:Zone Air System Sensible Cooling Energy
+  RECAMARAPB:Zone Air System Sensible Cooling Energy
+  SALA:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer:Zone:BANO [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  BANO:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:CIRCULACION [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  CIRCULACION:Zone Air System Sensible Heating Energy
+  CIRCULACION:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:CIRCULACION [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  CIRCULACION:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer:Zone:CIRCULACION [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  CIRCULACION:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:CIRCULACION [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  CIRCULACION:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer:Zone:CIRCULACION [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  CIRCULACION:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:COMERCIO [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  COMERCIO:Zone Air System Sensible Heating Energy
+  COMERCIO:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:COMERCIO [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  COMERCIO:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer:Zone:COMERCIO [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  COMERCIO:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:COMERCIO [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  COMERCIO:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer:Zone:COMERCIO [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  COMERCIO:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ESCALERA [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ESCALERA:Zone Air System Sensible Heating Energy
+  ESCALERA:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ESCALERA [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ESCALERA:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer:Zone:ESCALERA [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ESCALERA:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ESCALERA [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ESCALERA:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer:Zone:ESCALERA [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ESCALERA:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:RECAMARAPA [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  RECAMARAPA:Zone Air System Sensible Heating Energy
+  RECAMARAPA:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:RECAMARAPA [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  RECAMARAPA:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer:Zone:RECAMARAPA [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  RECAMARAPA:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:RECAMARAPA [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  RECAMARAPA:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer:Zone:RECAMARAPA [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  RECAMARAPA:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:RECAMARAPB [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  RECAMARAPB:Zone Air System Sensible Heating Energy
+  RECAMARAPB:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:RECAMARAPB [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  RECAMARAPB:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer:Zone:RECAMARAPB [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  RECAMARAPB:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:RECAMARAPB [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  RECAMARAPB:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer:Zone:RECAMARAPB [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  RECAMARAPB:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:SALA [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  SALA:Zone Air System Sensible Heating Energy
+  SALA:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:SALA [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  SALA:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer:Zone:SALA [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  SALA:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:SALA [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  SALA:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer:Zone:SALA [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  SALA:Zone Air System Sensible Cooling Energy
+
+ For Meter=Carbon Equivalent:Facility [kg], ResourceType=Carbon Equivalent, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
+
+ For Meter=CarbonEquivalentEmissions:Carbon Equivalent [kg], ResourceType=Carbon Equivalent, EndUse=CarbonEquivalentEmissions, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
