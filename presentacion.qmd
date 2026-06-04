@@ -410,8 +410,6 @@ Markdown(tabulate(ghd, headers='keys'))
 * Adobe: aunque individualmente disminuye Ti, disminuye amplitud oscilación junto con otras EDB de ganancia de calor
 * Horario de ventilación diurna: depende de la temperatura exterior, pero en general mejora el confort térmico
 
-## Referencias
-
 ## Temperatura interior de cada zona
 
 ```{python}
@@ -503,3 +501,6 @@ fig.add_hline(y=float(Tn_inf), line=dict(color='blue', width=2), annotation_text
 # Limit x-range to the same window as before
 fig.update_xaxes(range=[f1, f2])
 ```
+
+## Referencias
+
