@@ -411,3 +411,95 @@ Markdown(tabulate(ghd, headers='keys'))
 * Horario de ventilación diurna: depende de la temperatura exterior, pero en general mejora el confort térmico
 
 ## Referencias
+
+## Temperatura interior de cada zona
+
+```{python}
+import plotly.graph_objects as go
+import pandas as pd
+import matplotlib.pyplot as plt
+from iertools.read import read_sql
+from dateutil.parser import parse
+
+areas = {"BANO":1.7*2.2, "CIRCULACION":3.7, "COMERCIO":3.4*3+1.2*0.7, "ESCALERA":2.2*2.7, "RECAMARAPA":2.6*4.4+1.7*2.2, "RECAMARAPB":2.6*4.4, "SALA":4.4*3.7}
+pesos = {nombre: area / sum(areas.values()) for nombre, area in areas.items()}
+
+f = "osm/013_modificacion/run/eplusout.sql"
+cb = read_sql(f,alias=True)
+data_cb = cb.data
+temps = data_cb.copy()
+
+f = "osm/016_adobe/run/eplusout.sql"
+adobe = read_sql(f,alias=True)
+data_adobe = adobe.data
+
+f = "osm/021_ventilacion_diurna/run/eplusout.sql"
+ventilacion_diurna = read_sql(f,alias=True)
+data_ventilacion_diurna = ventilacion_diurna.data
+
+f = "osm/020_a0p7/run/eplusout.sql"
+a0p7 = read_sql(f,alias=True)
+data_a0p7 = a0p7.data
+
+f = "osm/022_3edb/run/eplusout.sql"
+edb = read_sql(f,alias=True)
+data_edb = edb.data
+
+Tma = temps.To["2006-01-01":"2006-01-31"].mean()
+Tmin = temps.To["2006-01-01":"2006-01-31"].resample("D").min().mean()
+Tmax = temps.To["2006-01-01":"2006-01-31"].resample("D").max().mean()
+DeltaTa = Tmax - Tmin
+banda = 3.5 / 2
+Tn = 13.5 + .54 * Tma
+Tn_sup = Tn + banda
+Tn_inf = Tn - banda
+
+f1 = parse("2006-01-01")
+f2 = f1 + pd.Timedelta(days=31)
+
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=data_cb.index, y=data_cb.Ti_BANO, mode='lines', name='CB_BANO'))
+fig.add_trace(go.Scatter(x=data_cb.index, y=data_cb.Ti_CIRCULACION, mode='lines', name='CB_CIRCULACION'))
+fig.add_trace(go.Scatter(x=data_cb.index, y=data_cb.Ti_COMERCIO, mode='lines', name='CB_COMERCIO'))
+fig.add_trace(go.Scatter(x=data_cb.index, y=data_cb.Ti_ESCALERA, mode='lines', name='CB_ESCALERA'))
+fig.add_trace(go.Scatter(x=data_cb.index, y=data_cb.Ti_RECAMARAPA, mode='lines', name='CB_RECAMARAPA'))
+fig.add_trace(go.Scatter(x=data_cb.index, y=data_cb.Ti_RECAMARAPB, mode='lines', name='CB_RECAMARAPB'))
+fig.add_trace(go.Scatter(x=data_cb.index, y=data_cb.Ti_SALA, mode='lines', name='CB_SALA'))
+fig.add_trace(go.Scatter(x=data_adobe.index, y=data_adobe.Ti_BANO, mode='lines', name='adobe_BANO'))
+fig.add_trace(go.Scatter(x=data_adobe.index, y=data_adobe.Ti_CIRCULACION, mode='lines', name='adobe_CIRCULACION'))
+fig.add_trace(go.Scatter(x=data_adobe.index, y=data_adobe.Ti_COMERCIO, mode='lines', name='adobe_COMERCIO'))
+fig.add_trace(go.Scatter(x=data_adobe.index, y=data_adobe.Ti_ESCALERA, mode='lines', name='adobe_ESCALERA'))
+fig.add_trace(go.Scatter(x=data_adobe.index, y=data_adobe.Ti_RECAMARAPA, mode='lines', name='adobe_RECAMARAPA'))
+fig.add_trace(go.Scatter(x=data_adobe.index, y=data_adobe.Ti_RECAMARAPB, mode='lines', name='adobe_RECAMARAPB'))
+fig.add_trace(go.Scatter(x=data_adobe.index, y=data_adobe.Ti_SALA, mode='lines', name='adobe_SALA'))
+fig.add_trace(go.Scatter(x=data_ventilacion_diurna.index, y=data_ventilacion_diurna.Ti_BANO, mode='lines', name='ventilacion_diurna_BANO'))
+fig.add_trace(go.Scatter(x=data_ventilacion_diurna.index, y=data_ventilacion_diurna.Ti_CIRCULACION, mode='lines', name='ventilacion_diurna_CIRCULACION'))
+fig.add_trace(go.Scatter(x=data_ventilacion_diurna.index, y=data_ventilacion_diurna.Ti_COMERCIO, mode='lines', name='ventilacion_diurna_COMERCIO'))
+fig.add_trace(go.Scatter(x=data_ventilacion_diurna.index, y=data_ventilacion_diurna.Ti_ESCALERA, mode='lines', name='ventilacion_diurna_ESCALERA'))
+fig.add_trace(go.Scatter(x=data_ventilacion_diurna.index, y=data_ventilacion_diurna.Ti_RECAMARAPA, mode='lines', name='ventilacion_diurna_RECAMARAPA'))
+fig.add_trace(go.Scatter(x=data_ventilacion_diurna.index, y=data_ventilacion_diurna.Ti_RECAMARAPB, mode='lines', name='ventilacion_diurna_RECAMARAPB'))
+fig.add_trace(go.Scatter(x=data_ventilacion_diurna.index, y=data_ventilacion_diurna.Ti_SALA, mode='lines', name='ventilacion_diurna_SALA'))
+fig.add_trace(go.Scatter(x=data_a0p7.index, y=data_a0p7.Ti_BANO, mode='lines', name='a0p7_BANO'))
+fig.add_trace(go.Scatter(x=data_a0p7.index, y=data_a0p7.Ti_CIRCULACION, mode='lines', name='a0p7_CIRCULACION'))
+fig.add_trace(go.Scatter(x=data_a0p7.index, y=data_a0p7.Ti_COMERCIO, mode='lines', name='a0p7_COMERCIO'))
+fig.add_trace(go.Scatter(x=data_a0p7.index, y=data_a0p7.Ti_ESCALERA, mode='lines', name='a0p7_ESCALERA'))
+fig.add_trace(go.Scatter(x=data_a0p7.index, y=data_a0p7.Ti_RECAMARAPA, mode='lines', name='a0p7_RECAMARAPA'))
+fig.add_trace(go.Scatter(x=data_a0p7.index, y=data_a0p7.Ti_RECAMARAPB, mode='lines', name='a0p7_RECAMARAPB'))
+fig.add_trace(go.Scatter(x=data_a0p7.index, y=data_a0p7.Ti_SALA, mode='lines', name='a0p7_SALA'))
+fig.add_trace(go.Scatter(x=data_edb.index, y=data_edb.Ti_BANO, mode='lines', name='edb_BANO'))
+fig.add_trace(go.Scatter(x=data_edb.index, y=data_edb.Ti_CIRCULACION, mode='lines', name='edb_CIRCULACION'))
+fig.add_trace(go.Scatter(x=data_edb.index, y=data_edb.Ti_COMERCIO, mode='lines', name='edb_COMERCIO'))
+fig.add_trace(go.Scatter(x=data_edb.index, y=data_edb.Ti_ESCALERA, mode='lines', name='edb_ESCALERA'))
+fig.add_trace(go.Scatter(x=data_edb.index, y=data_edb.Ti_RECAMARAPA, mode='lines', name='edb_RECAMARAPA'))
+fig.add_trace(go.Scatter(x=data_edb.index, y=data_edb.Ti_RECAMARAPB, mode='lines', name='edb_RECAMARAPB'))
+fig.add_trace(go.Scatter(x=data_edb.index, y=data_edb.Ti_SALA, mode='lines', name='edb_SALA'))
+
+
+# Horizontal Tn lines
+fig.add_hline(y=float(Tn_sup), line=dict(color='red', width=2), annotation_text='Tn_sup', annotation_position='top right')
+fig.add_hline(y=float(Tn), line=dict(color='green', width=2), annotation_text='Tn', annotation_position='top right')
+fig.add_hline(y=float(Tn_inf), line=dict(color='blue', width=2), annotation_text='Tn_inf', annotation_position='top right')
+
+# Limit x-range to the same window as before
+fig.update_xaxes(range=[f1, f2])
+```
