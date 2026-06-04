@@ -409,6 +409,7 @@ Markdown(tabulate(ghd, headers='keys'))
 * Reducción GHDF CB -> 3 EDB: 1917.66
 * Adobe: aunque individualmente disminuye Ti, disminuye amplitud oscilación junto con otras EDB de ganancia de calor
 * Horario de ventilación diurna: depende de la temperatura exterior, pero en general mejora el confort térmico
+* Limitaciones: sin cargas internas y sin masa térmica en escaleras
 
 ## Temperatura interior de cada zona
 
