@@ -193,6 +193,8 @@ fig.update_layout(
 ::: {.column width="50%"}
 ![](img/pb.png)
 ![](img/pa.png)
+![](img/circulacion.jpeg)
+![](img/verde.jpeg)
 :::
 ::: {.column width="50%"}
 ![](img/surfaces.png)
